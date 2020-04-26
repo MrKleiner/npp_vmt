@@ -97,6 +97,7 @@
 <KeyWord name="emissiveblend" />
 <KeyWord name="envmap" />
 <KeyWord name="envmapcontrast" />
+<KeyWord name="envmapfresnel" />
 <KeyWord name="envmapmask" />
 <KeyWord name="envmapsaturation" />
 <KeyWord name="envmaptint" />
@@ -207,6 +208,9 @@
 <KeyWord name="pbr_lightmapped" />
 <KeyWord name="pbr_model" />
 <KeyWord name="phong" />
+<KeyWord name="phongboost" />
+<KeyWord name="phongexponent" />
+<KeyWord name="phongfresnelranges" />
 <KeyWord name="plaster" />
 <KeyWord name="plastic" />
 <KeyWord name="plastic_barrel" />
@@ -232,6 +236,8 @@
 <KeyWord name="refracttinttexture" />
 <KeyWord name="resultvar" />
 <KeyWord name="rimlight" />
+<KeyWord name="rimlightboost" />
+<KeyWord name="rimlightexponent" />
 <KeyWord name="rock" />
 <KeyWord name="roller" />
 <KeyWord name="rotate" />
