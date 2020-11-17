@@ -18,10 +18,12 @@
 <KeyWord name="ambientocclusion" />
 <KeyWord name="ambientocclusiontexture" />
 <KeyWord name="angle" />
+<KeyWord name="animatedoffsettexture" />
 <KeyWord name="animatedtexture" />
 <KeyWord name="animatedtextureframenumvar" />
 <KeyWord name="animatedtextureframerate" />
 <KeyWord name="animatedtexturevar" />
+<KeyWord name="animatedweaponsheen" />
 <KeyWord name="antlion" />
 <KeyWord name="antlionsand" />
 <KeyWord name="aofactor" />
@@ -42,6 +44,7 @@
 <KeyWord name="blendframes" />
 <KeyWord name="blendmodulatetexture" />
 <KeyWord name="blendtintbybasealpha" />
+<KeyWord name="blendtintcoloroverbase" />
 <KeyWord name="bloodyflesh" />
 <KeyWord name="bluramount" />
 <KeyWord name="bottommaterial" />
@@ -51,10 +54,12 @@
 <KeyWord name="bumpframe" />
 <KeyWord name="bumpmap" />
 <KeyWord name="bumpmap2" />
+<KeyWord name="bumpmapalphaphongmask" />
 <KeyWord name="bumpmask" />
 <KeyWord name="bumpoffset" />
 <KeyWord name="bumpscale" />
 <KeyWord name="bumptransform" />
+<KeyWord name="burnlevel" />
 <KeyWord name="canister" />
 <KeyWord name="cardboard" />
 <KeyWord name="carpet" />
@@ -100,6 +105,7 @@
 <KeyWord name="concrete" />
 <KeyWord name="concrete_block" />
 <KeyWord name="contrast" />
+<KeyWord name="convar" />
 <KeyWord name="corneabumpstrength" />
 <KeyWord name="corneatexture" />
 <KeyWord name="crackmaterial" />
@@ -138,15 +144,19 @@
 <KeyWord name="envmap" />
 <KeyWord name="envmapcontrast" />
 <KeyWord name="envmapfresnel" />
+<KeyWord name="envmaplightscale" />
+<KeyWord name="envmaplightscaleminmax" />
 <KeyWord name="envmapmask" />
 <KeyWord name="envmapmaskscale" />
 <KeyWord name="envmapmasktransform" />
 <KeyWord name="envmapmode" />
 <KeyWord name="envmapsaturation" />
 <KeyWord name="envmaptint" />
+<KeyWord name="equals" />
 <KeyWord name="eyeballradius" />
 <KeyWord name="fallbackmaterial" />
 <KeyWord name="farfadeinterval" />
+<KeyWord name="filtersize " />
 <KeyWord name="flesh" />
 <KeyWord name="fleshbordernoisescale" />
 <KeyWord name="fleshbordersoftness" />
@@ -213,11 +223,13 @@
 <KeyWord name="heightscale" />
 <KeyWord name="ignorez" />
 <KeyWord name="initialvalue" />
+<KeyWord name="invis" />
 <KeyWord name="iris" />
 <KeyWord name="item" />
 <KeyWord name="jeeptire" />
 <KeyWord name="keywords" />
 <KeyWord name="ladder" />
+<KeyWord name="lessorequal" />
 <KeyWord name="lightmapped4wayblend" />
 <KeyWord name="lightmappedgeneric" />
 <KeyWord name="lightmappedreflective" />
@@ -250,6 +262,7 @@
 <KeyWord name="minval" />
 <KeyWord name="mod2x" />
 <KeyWord name="model" />
+<KeyWord name="modelglowcolor" />
 <KeyWord name="modelmaterial" />
 <KeyWord name="modulate" />
 <KeyWord name="monitorscreen" />
@@ -258,6 +271,7 @@
 <KeyWord name="mud" />
 <KeyWord name="multiblend" />
 <KeyWord name="multipass" />
+<KeyWord name="multiply" />
 <KeyWord name="no_decal" />
 <KeyWord name="no_fullbright" />
 <KeyWord name="nocull" />
@@ -282,6 +296,8 @@
 <KeyWord name="paintcan" />
 <KeyWord name="paper" />
 <KeyWord name="papercup" />
+<KeyWord name="parallaxcenter" />
+<KeyWord name="parallaxdepth" />
 <KeyWord name="parallaxheight" />
 <KeyWord name="parallaxmap" />
 <KeyWord name="parallaxmapscale" />
@@ -327,6 +343,7 @@
 <KeyWord name="rimlight" />
 <KeyWord name="rimlightboost" />
 <KeyWord name="rimlightexponent" />
+<KeyWord name="rimmask" />
 <KeyWord name="rock" />
 <KeyWord name="roller" />
 <KeyWord name="rotate" />
@@ -339,6 +356,8 @@
 <KeyWord name="scale" />
 <KeyWord name="scaleedgesoftnessbasedonscreenres" />
 <KeyWord name="scaleoutlinesoftnessbasedonscreenres" />
+<KeyWord name="sdk_postprocess" />
+<KeyWord name="seamless_detail" />
 <KeyWord name="seamless_scale" />
 <KeyWord name="selectfirstifnonzero" />
 <KeyWord name="selfillum" />
@@ -350,6 +369,13 @@
 <KeyWord name="selfillumtexture" />
 <KeyWord name="selfillumtint" />
 <KeyWord name="shadersrgbread360" />
+<KeyWord name="sharpenfactor " />
+<KeyWord name="sheenindex" />
+<KeyWord name="sheenmap" />
+<KeyWord name="sheenmapmask" />
+<KeyWord name="sheenmapmaskframe" />
+<KeyWord name="sheenmaptint" />
+<KeyWord name="sheenpassenabled" />
 <KeyWord name="shinyblood" />
 <KeyWord name="shinybloodexponent" />
 <KeyWord name="sine" />
@@ -433,6 +459,7 @@
 <KeyWord name="wood_solid" />
 <KeyWord name="worldtwotextureblend" />
 <KeyWord name="writez" />
+<KeyWord name="yellowlevel" />
 <KeyWord name="zombieflesh" />
 	</AutoComplete>
 </NotepadPlus>
