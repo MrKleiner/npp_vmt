@@ -11,6 +11,7 @@
 <KeyWord name="allowalphatocoverage" />
 <KeyWord name="allowdiffusemodulation" />
 <KeyWord name="alpha" />
+<KeyWord name="alphamapphongmask" />
 <KeyWord name="alphatest" />
 <KeyWord name="alphatestreference" />
 <KeyWord name="ambientocclcolor" />
@@ -142,6 +143,7 @@
 <KeyWord name="emissiveblend" />
 <KeyWord name="endfadesize" />
 <KeyWord name="envmap" />
+<KeyWord name="envmapalphaphongmask" />
 <KeyWord name="envmapcontrast" />
 <KeyWord name="envmapfresnel" />
 <KeyWord name="envmaplightscale" />
