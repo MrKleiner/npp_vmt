@@ -2,6 +2,7 @@
 <NotepadPlus>
 	<AutoComplete>
 <KeyWord name="_rt_camera" />
+<KeyWord name="_rt_waterreflection" />
 <KeyWord name="2basetexture" />
 <KeyWord name="abovewater" />
 <KeyWord name="abs" />
@@ -80,6 +81,7 @@
 <KeyWord name="basetimeslightmaptimesdetail" />
 <KeyWord name="basettexture" />
 <KeyWord name="beachfoam" />
+<KeyWord name="benefactorlevel" />
 <KeyWord name="blendframes" />
 <KeyWord name="blendmodulatetexture" />
 <KeyWord name="blendmodulatetransform" />
@@ -102,6 +104,7 @@
 <KeyWord name="bloomtype" />
 <KeyWord name="bluramount" />
 <KeyWord name="blurfilterx" />
+<KeyWord name="blurrefract" />
 <KeyWord name="blurtexture" />
 <KeyWord name="bottommaterial" />
 <KeyWord name="boulder" />
@@ -124,6 +127,7 @@
 <KeyWord name="bumpmap3" />
 <KeyWord name="bumpmap4" />
 <KeyWord name="bumpmapalphaphongmask" />
+<KeyWord name="bumpoffset" />
 <KeyWord name="bumpscale" />
 <KeyWord name="bumpstrength" />
 <KeyWord name="bumpstretch" />
@@ -154,6 +158,7 @@
 <KeyWord name="carpet" />
 <KeyWord name="casttextureshadows" />
 <KeyWord name="ceiling_tile" />
+<KeyWord name="center" />
 <KeyWord name="centervar" />
 <KeyWord name="chain" />
 <KeyWord name="chainlink" />
@@ -166,8 +171,11 @@
 <KeyWord name="clearcolor" />
 <KeyWord name="clientshader" />
 <KeyWord name="cloakfactor" />
+<KeyWord name="cloakpassenabled" />
 <KeyWord name="cloaktint" />
 <KeyWord name="cloud" />
+<KeyWord name="cloudalphatexture" />
+<KeyWord name="cloudscale" />
 <KeyWord name="color" />
 <KeyWord name="color_flow_displacebynormalstrength" />
 <KeyWord name="color_flow_lerpexp" />
@@ -197,6 +205,7 @@
 <KeyWord name="compilegrenadeclip" />
 <KeyWord name="compilehint" />
 <KeyWord name="compileinvisible" />
+<KeyWord name="compilekeeplight" />
 <KeyWord name="compileladder" />
 <KeyWord name="compilenochop" />
 <KeyWord name="compilenodraw" />
@@ -337,6 +346,7 @@
 <KeyWord name="disable_color_writes" />
 <KeyWord name="disablecsmlookup" />
 <KeyWord name="disabled" />
+<KeyWord name="displaydigit" />
 <KeyWord name="distancealpha" />
 <KeyWord name="distancealphafromdetail" />
 <KeyWord name="distanceclamped" />
@@ -351,6 +361,7 @@
 <KeyWord name="dropshadowopacity" />
 <KeyWord name="dropshadowscale" />
 <KeyWord name="dualsequence" />
+<KeyWord name="dudvframe" />
 <KeyWord name="dudvmap" />
 <KeyWord name="dummy" />
 <KeyWord name="easein" />
@@ -422,6 +433,7 @@
 <KeyWord name="eyeup" />
 <KeyWord name="fadedistance" />
 <KeyWord name="fadeout" />
+<KeyWord name="fadeoutonsilhouette" />
 <KeyWord name="fakerimboost" />
 <KeyWord name="fakerimlightscaleminmax" />
 <KeyWord name="fakerimtint" />
@@ -529,11 +541,13 @@
 <KeyWord name="gunship" />
 <KeyWord name="halflambert" />
 <KeyWord name="halfwidth" />
+<KeyWord name="halfwidthvar" />
 <KeyWord name="hdrbasetexture" />
 <KeyWord name="hdrcompressedtexture" />
 <KeyWord name="hdrenvmap" />
 <KeyWord name="health" />
 <KeyWord name="heartbeat" />
+<KeyWord name="heartbeatscale" />
 <KeyWord name="heat_haze_scale" />
 <KeyWord name="height_scale" />
 <KeyWord name="heliblade" />
@@ -544,6 +558,7 @@
 <KeyWord name="holomask" />
 <KeyWord name="holospectrum" />
 <KeyWord name="ice" />
+<KeyWord name="ignorevertexcolors" />
 <KeyWord name="ignorez" />
 <KeyWord name="initialvalue" />
 <KeyWord name="int" />
@@ -606,6 +621,7 @@
 <KeyWord name="lightmappedgeneric" />
 <KeyWord name="lightmappedreflective" />
 <KeyWord name="lightmappedtwotexture" />
+<KeyWord name="lightmaptint" />
 <KeyWord name="lightmapwaterfog" />
 <KeyWord name="lightwarp" />
 <KeyWord name="lightwarptexture" />
@@ -624,6 +640,7 @@
 <KeyWord name="masks" />
 <KeyWord name="masks1" />
 <KeyWord name="masks2" />
+<KeyWord name="maskscale" />
 <KeyWord name="maskstexture" />
 <KeyWord name="matcap" />
 <KeyWord name="matchinverted" />
@@ -643,6 +660,7 @@
 <KeyWord name="maxsize" />
 <KeyWord name="maxval" />
 <KeyWord name="mean" />
+<KeyWord name="meanvar" />
 <KeyWord name="metal" />
 <KeyWord name="metal_barrel" />
 <KeyWord name="metal_bouncy" />
@@ -662,6 +680,7 @@
 <KeyWord name="mirroraboutviewportedges" />
 <KeyWord name="mirrorhorizontal" />
 <KeyWord name="mod2x" />
+<KeyWord name="modblend" />
 <KeyWord name="model" />
 <KeyWord name="modelglowcolor" />
 <KeyWord name="modelmaterial" />
@@ -695,6 +714,7 @@
 <KeyWord name="nodraw" />
 <KeyWord name="noenvmapmip" />
 <KeyWord name="nofog" />
+<KeyWord name="nofresnel" />
 <KeyWord name="noise_scale" />
 <KeyWord name="noisetexture" />
 <KeyWord name="nolod" />
@@ -715,6 +735,7 @@
 <KeyWord name="notint" />
 <KeyWord name="notooltexture" />
 <KeyWord name="noviewportfixup" />
+<KeyWord name="nowritez" />
 <KeyWord name="offset" />
 <KeyWord name="one" />
 <KeyWord name="onlyanimateontexture" />
@@ -844,18 +865,22 @@
 <KeyWord name="reflect2dskybox" />
 <KeyWord name="reflect3dskybox" />
 <KeyWord name="reflectamount" />
+<KeyWord name="reflectblendfactor" />
 <KeyWord name="reflectentities" />
 <KeyWord name="reflectivity" />
 <KeyWord name="reflectonlymarkedentities" />
+<KeyWord name="reflectsaturation" />
 <KeyWord name="reflectskyboxonly" />
 <KeyWord name="reflecttexture" />
 <KeyWord name="reflecttint" />
 <KeyWord name="refract" />
 <KeyWord name="refractamount" />
+<KeyWord name="refractblur" />
 <KeyWord name="refractionamount" />
 <KeyWord name="refracttexture" />
 <KeyWord name="refracttint" />
 <KeyWord name="refracttinttexture" />
+<KeyWord name="refracttinttextureframe" />
 <KeyWord name="renderfixz" />
 <KeyWord name="resultvar" />
 <KeyWord name="rimboost" />
@@ -867,18 +892,24 @@
 <KeyWord name="rimmask" />
 <KeyWord name="rock" />
 <KeyWord name="roller" />
+<KeyWord name="rotate" />
 <KeyWord name="rotatevar" />
 <KeyWord name="rttshadowbuild" />
 <KeyWord name="rubber" />
 <KeyWord name="rubbertire" />
 <KeyWord name="sand" />
+<KeyWord name="saturation" />
 <KeyWord name="scale" />
 <KeyWord name="scaleamount" />
 <KeyWord name="scaleedgesoftnessbasedonscreenres" />
 <KeyWord name="scaleoutlinesoftnessbasedonscreenres" />
+<KeyWord name="scalevar" />
 <KeyWord name="screenspace_general" />
+<KeyWord name="scroll" />
 <KeyWord name="scroll1" />
+<KeyWord name="scroll1 " />
 <KeyWord name="scroll2" />
+<KeyWord name="scrollspeed" />
 <KeyWord name="sdk_postprocess" />
 <KeyWord name="seamless_base" />
 <KeyWord name="seamless_detail" />
@@ -998,6 +1029,8 @@
 <KeyWord name="texture2_lumend" />
 <KeyWord name="texture2_lumstart" />
 <KeyWord name="texture2_uvscale" />
+<KeyWord name="texture2scale" />
+<KeyWord name="texture2transform" />
 <KeyWord name="texture3" />
 <KeyWord name="texture3_blendend" />
 <KeyWord name="texture3_blendmode" />
@@ -1015,6 +1048,7 @@
 <KeyWord name="texture4_uvscale" />
 <KeyWord name="textureframenumvar" />
 <KeyWord name="texturescroll" />
+<KeyWord name="texturescrollangle" />
 <KeyWord name="texturescrollrate" />
 <KeyWord name="texturescrollvar" />
 <KeyWord name="texturetransform" />
@@ -1033,6 +1067,7 @@
 <KeyWord name="toggletexturevar" />
 <KeyWord name="tooltexture" />
 <KeyWord name="tractorbeam" />
+<KeyWord name="translate" />
 <KeyWord name="translatevar" />
 <KeyWord name="translucency" />
 <KeyWord name="translucent" />
@@ -1054,8 +1089,12 @@
 <KeyWord name="treeswaystartradius" />
 <KeyWord name="treeswaystatic" />
 <KeyWord name="treeswaystrength" />
+<KeyWord name="trimzeros" />
+<KeyWord name="txscale" />
 <KeyWord name="underwaterclearcolorcap" />
+<KeyWord name="underwateroverlay" />
 <KeyWord name="uniformnoise" />
+<KeyWord name="unlitfactor" />
 <KeyWord name="unlitgeneric" />
 <KeyWord name="unlittwotexture" />
 <KeyWord name="unwearstrength" />
@@ -1115,6 +1154,7 @@
 <KeyWord name="wearwidthmax" />
 <KeyWord name="wearwidthmin" />
 <KeyWord name="wetbrightnessfactor" />
+<KeyWord name="windowglass" />
 <KeyWord name="windowimposter" />
 <KeyWord name="wireframe" />
 <KeyWord name="wood" />
