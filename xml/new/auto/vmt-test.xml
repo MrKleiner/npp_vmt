@@ -64,6 +64,7 @@
 <KeyWord name="basealphaenvmapmaskminmaxexp" />
 <KeyWord name="basealphaenvmask" />
 <KeyWord name="basealphaphongmask" />
+<KeyWord name="basealphaselfillummask" />
 <KeyWord name="basemapalphaenvmapmask" />
 <KeyWord name="basemapalphaenvmask" />
 <KeyWord name="basemapalphaphongmask" />
@@ -83,6 +84,7 @@
 <KeyWord name="basettexture" />
 <KeyWord name="beachfoam" />
 <KeyWord name="benefactorlevel" />
+<KeyWord name="bias" />
 <KeyWord name="blendframes" />
 <KeyWord name="blendmodulatetexture" />
 <KeyWord name="blendmodulatetransform" />
@@ -144,7 +146,6 @@
 <KeyWord name="c0_y" />
 <KeyWord name="c0_z" />
 <KeyWord name="cable" />
-<KeyWord name="camo" />
 <KeyWord name="camocolor0" />
 <KeyWord name="camocolor1" />
 <KeyWord name="camocolor2" />
@@ -234,6 +235,7 @@
 <KeyWord name="copyalpha" />
 <KeyWord name="corneabumpstrength" />
 <KeyWord name="corneatexture" />
+<KeyWord name="counterproxy" />
 <KeyWord name="crackmaterial" />
 <KeyWord name="cropfactor" />
 <KeyWord name="crosshaircolor" />
@@ -253,6 +255,7 @@
 <KeyWord name="cutoutdecalmappingscale" />
 <KeyWord name="cutouttexturebias" />
 <KeyWord name="cycle" />
+<KeyWord name="cycledigitswhennoscore" />
 <KeyWord name="damagebleaching" />
 <KeyWord name="damagedetailbrightnessadjustment" />
 <KeyWord name="damagedetailenvboost" />
@@ -296,6 +299,7 @@
 <KeyWord name="decaldynamicscale" />
 <KeyWord name="decalfadeduration" />
 <KeyWord name="decalfadetime" />
+<KeyWord name="decalfindreplacevalue" />
 <KeyWord name="decalmasktexture" />
 <KeyWord name="decalmodulate" />
 <KeyWord name="decalscale" />
@@ -307,6 +311,7 @@
 <KeyWord name="default_silent" />
 <KeyWord name="defaultphongexponent" />
 <KeyWord name="deferredshadows" />
+<KeyWord name="depth_feather" />
 <KeyWord name="depthblend" />
 <KeyWord name="depthblendscale" />
 <KeyWord name="depthfade" />
@@ -374,6 +379,7 @@
 <KeyWord name="easein" />
 <KeyWord name="easeout" />
 <KeyWord name="econ_patches_enabled" />
+<KeyWord name="econinspectpreviewtime" />
 <KeyWord name="edge_softness" />
 <KeyWord name="edgesoftnessend" />
 <KeyWord name="edgesoftnessstart" />
@@ -498,6 +504,7 @@
 <KeyWord name="forcecheap" />
 <KeyWord name="forceenvmap" />
 <KeyWord name="forceexpensive" />
+<KeyWord name="forcefresnel" />
 <KeyWord name="forcephong" />
 <KeyWord name="forcerefract" />
 <KeyWord name="frac" />
@@ -511,6 +518,7 @@
 <KeyWord name="gammacolorread" />
 <KeyWord name="gaussiannoise" />
 <KeyWord name="gen_face" />
+<KeyWord name="getteamnumber" />
 <KeyWord name="ghostoverlay" />
 <KeyWord name="glass" />
 <KeyWord name="glassbottle" />
@@ -568,7 +576,9 @@
 <KeyWord name="ice" />
 <KeyWord name="ignorevertexcolors" />
 <KeyWord name="ignorez" />
+<KeyWord name="include" />
 <KeyWord name="initialvalue" />
+<KeyWord name="insert" />
 <KeyWord name="int" />
 <KeyWord name="intensity" />
 <KeyWord name="interior" />
@@ -582,6 +592,7 @@
 <KeyWord name="interiorrefractstrength" />
 <KeyWord name="intro" />
 <KeyWord name="inversedepthblend" />
+<KeyWord name="invert" />
 <KeyWord name="invertphongmask" />
 <KeyWord name="invis" />
 <KeyWord name="invulnlevel" />
@@ -590,6 +601,7 @@
 <KeyWord name="irisframe" />
 <KeyWord name="irisu" />
 <KeyWord name="irisv" />
+<KeyWord name="ironsightamount" />
 <KeyWord name="isnpc" />
 <KeyWord name="item" />
 <KeyWord name="itemtintcolor" />
@@ -645,6 +657,8 @@
 <KeyWord name="lumblendfactor2" />
 <KeyWord name="lumblendfactor3" />
 <KeyWord name="lumblendfactor4" />
+<KeyWord name="mappingheight" />
+<KeyWord name="mappingwidth" />
 <KeyWord name="masks" />
 <KeyWord name="masks1" />
 <KeyWord name="masks2" />
@@ -729,6 +743,7 @@
 <KeyWord name="nolod" />
 <KeyWord name="nomip" />
 <KeyWord name="nonice" />
+<KeyWord name="noopfallback" />
 <KeyWord name="nooverbright" />
 <KeyWord name="nopaint" />
 <KeyWord name="noportal" />
@@ -795,9 +810,6 @@
 <KeyWord name="patternrotation" />
 <KeyWord name="patternscale" />
 <KeyWord name="patterntexturetransform" />
-<KeyWord name="pbr" />
-<KeyWord name="pbr_lightmapped" />
-<KeyWord name="pbr_model" />
 <KeyWord name="peel" />
 <KeyWord name="perparticleoutline" />
 <KeyWord name="phong" />
@@ -841,6 +853,7 @@
 <KeyWord name="playerhealth" />
 <KeyWord name="playerhealtime" />
 <KeyWord name="playerlogo" />
+<KeyWord name="playerlogomodelpreview" />
 <KeyWord name="playerposition" />
 <KeyWord name="playerproximity" />
 <KeyWord name="playerscore" />
@@ -870,6 +883,10 @@
 <KeyWord name="pupilopenrate" />
 <KeyWord name="quicksand" />
 <KeyWord name="ramptexture" />
+<KeyWord name="range_in_max" />
+<KeyWord name="range_in_min" />
+<KeyWord name="range_out_max" />
+<KeyWord name="range_out_min" />
 <KeyWord name="rate" />
 <KeyWord name="raytracesphere" />
 <KeyWord name="receiveflashlight" />
@@ -894,6 +911,8 @@
 <KeyWord name="refracttinttexture" />
 <KeyWord name="refracttinttextureframe" />
 <KeyWord name="remaprangemax" />
+<KeyWord name="remaprangemin" />
+<KeyWord name="remapvalclamp" />
 <KeyWord name="renderfixz" />
 <KeyWord name="resultvar" />
 <KeyWord name="rimboost" />
@@ -930,6 +949,7 @@
 <KeyWord name="selectfirstifnonzero" />
 <KeyWord name="selfillum" />
 <KeyWord name="selfillum_envmapmask_alpha" />
+<KeyWord name="selfillumboost" />
 <KeyWord name="selfillumfresnel" />
 <KeyWord name="selfillumfresnelenabledthisframe" />
 <KeyWord name="selfillumfresnelminmaxexp" />
@@ -949,12 +969,14 @@
 <KeyWord name="shadowsaturationbounds" />
 <KeyWord name="shadowtint" />
 <KeyWord name="sharpness" />
+<KeyWord name="shatteredglass" />
 <KeyWord name="sheetindex" />
 <KeyWord name="shield" />
 <KeyWord name="shieldfalloff" />
 <KeyWord name="shinyblood" />
 <KeyWord name="shinybloodexponent" />
 <KeyWord name="showalpha" />
+<KeyWord name="simpleoverlay" />
 <KeyWord name="sine" />
 <KeyWord name="sinemax" />
 <KeyWord name="sinemin" />
@@ -1067,6 +1089,7 @@
 <KeyWord name="texture4_lumend" />
 <KeyWord name="texture4_lumstart" />
 <KeyWord name="texture4_uvscale" />
+<KeyWord name="textureblendmode" />
 <KeyWord name="textureframenumvar" />
 <KeyWord name="texturescale" />
 <KeyWord name="texturescroll" />
@@ -1156,6 +1179,7 @@
 <KeyWord name="warptexture" />
 <KeyWord name="water" />
 <KeyWord name="waterblendfactor" />
+<KeyWord name="waterdepth" />
 <KeyWord name="waterlod" />
 <KeyWord name="watermelon" />
 <KeyWord name="wave" />
