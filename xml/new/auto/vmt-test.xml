@@ -49,6 +49,7 @@
 <KeyWord name="animatedtexturevar" />
 <KeyWord name="animatedweaponsheen" />
 <KeyWord name="animatespecifictexture" />
+<KeyWord name="animcycle" />
 <KeyWord name="anisotropyamount" />
 <KeyWord name="antlion" />
 <KeyWord name="antlionsand" />
@@ -162,6 +163,7 @@
 <KeyWord name="centervar" />
 <KeyWord name="chain" />
 <KeyWord name="chainlink" />
+<KeyWord name="character" />
 <KeyWord name="cheapdiffuse" />
 <KeyWord name="cheapwaterenddistance" />
 <KeyWord name="cheapwaterstartdistance" />
@@ -234,6 +236,10 @@
 <KeyWord name="corneatexture" />
 <KeyWord name="crackmaterial" />
 <KeyWord name="cropfactor" />
+<KeyWord name="crosshaircolor" />
+<KeyWord name="crosshaircoloradapt" />
+<KeyWord name="crosshaircolortint" />
+<KeyWord name="crosshairmode" />
 <KeyWord name="crowbar" />
 <KeyWord name="cstrike" />
 <KeyWord name="cubeparallax" />
@@ -356,6 +362,7 @@
 <KeyWord name="dof_max" />
 <KeyWord name="dof_power" />
 <KeyWord name="dof_start_distance" />
+<KeyWord name="drivername" />
 <KeyWord name="dropshadowdepthexaggeration" />
 <KeyWord name="dropshadowhighlightscale" />
 <KeyWord name="dropshadowopacity" />
@@ -437,6 +444,7 @@
 <KeyWord name="fakerimboost" />
 <KeyWord name="fakerimlightscaleminmax" />
 <KeyWord name="fakerimtint" />
+<KeyWord name="fallback" />
 <KeyWord name="fallbackmaterial" />
 <KeyWord name="farblurdepth" />
 <KeyWord name="farblurradius" />
@@ -685,6 +693,7 @@
 <KeyWord name="modelglowcolor" />
 <KeyWord name="modelmaterial" />
 <KeyWord name="modulate" />
+<KeyWord name="moneyproxy" />
 <KeyWord name="monitorscreen" />
 <KeyWord name="moondome" />
 <KeyWord name="mostlyopaque" />
@@ -769,6 +778,8 @@
 <KeyWord name="parallaxmap" />
 <KeyWord name="parallaxmapscale" />
 <KeyWord name="parallaxstrength" />
+<KeyWord name="particlesphere" />
+<KeyWord name="patch" />
 <KeyWord name="pattern" />
 <KeyWord name="pattern_offset_x_end" />
 <KeyWord name="pattern_offset_x_start" />
@@ -862,6 +873,7 @@
 <KeyWord name="rate" />
 <KeyWord name="raytracesphere" />
 <KeyWord name="receiveflashlight" />
+<KeyWord name="recieveflashlight" />
 <KeyWord name="reflect2dskybox" />
 <KeyWord name="reflect3dskybox" />
 <KeyWord name="reflectamount" />
@@ -881,6 +893,7 @@
 <KeyWord name="refracttint" />
 <KeyWord name="refracttinttexture" />
 <KeyWord name="refracttinttextureframe" />
+<KeyWord name="remaprangemax" />
 <KeyWord name="renderfixz" />
 <KeyWord name="resultvar" />
 <KeyWord name="rimboost" />
@@ -925,6 +938,7 @@
 <KeyWord name="selfillumtexture" />
 <KeyWord name="selfillumtint" />
 <KeyWord name="separatedetailuvs" />
+<KeyWord name="sequence" />
 <KeyWord name="sequence_blend_mode" />
 <KeyWord name="shadersrgbread360" />
 <KeyWord name="shadow" />
@@ -988,8 +1002,12 @@
 <KeyWord name="staticblendtexture" />
 <KeyWord name="staticprop" />
 <KeyWord name="stattrakdigit" />
+<KeyWord name="stattrakdigitformodelweaponpreview" />
 <KeyWord name="stattrakicon" />
 <KeyWord name="stattrakillum" />
+<KeyWord name="stickerindex" />
+<KeyWord name="stickerpeel" />
+<KeyWord name="stickerselection" />
 <KeyWord name="stickybombglowcolor" />
 <KeyWord name="stretch" />
 <KeyWord name="strider" />
@@ -1006,11 +1024,14 @@
 <KeyWord name="surfacepropalpha" />
 <KeyWord name="surfacetexture" />
 <KeyWord name="tablet_radar_level_name" />
+<KeyWord name="tabletupgradeproxy" />
+<KeyWord name="tasermeter" />
 <KeyWord name="tcsize1" />
 <KeyWord name="tcsize2" />
 <KeyWord name="tcsize3" />
 <KeyWord name="tcsize4" />
 <KeyWord name="tcsize5" />
+<KeyWord name="teamidmaterialproxy" />
 <KeyWord name="teammatch" />
 <KeyWord name="teamtexture" />
 <KeyWord name="teeth" />
@@ -1047,6 +1068,7 @@
 <KeyWord name="texture4_lumstart" />
 <KeyWord name="texture4_uvscale" />
 <KeyWord name="textureframenumvar" />
+<KeyWord name="texturescale" />
 <KeyWord name="texturescroll" />
 <KeyWord name="texturescrollangle" />
 <KeyWord name="texturescrollrate" />
@@ -1098,6 +1120,7 @@
 <KeyWord name="unlitgeneric" />
 <KeyWord name="unlittwotexture" />
 <KeyWord name="unwearstrength" />
+<KeyWord name="upgrade" />
 <KeyWord name="use_in_fillrate_mode" />
 <KeyWord name="usealternateviewmatrix" />
 <KeyWord name="userendertarget" />
@@ -1138,6 +1161,8 @@
 <KeyWord name="wave" />
 <KeyWord name="weapon" />
 <KeyWord name="weapon_invis" />
+<KeyWord name="weaponlabeltext" />
+<KeyWord name="weaponlabeltextpreview" />
 <KeyWord name="weaponskin" />
 <KeyWord name="wearbias" />
 <KeyWord name="wearbleaching" />
