@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); */
+
 *
 {
 	margin: 0px;
@@ -168,6 +170,54 @@ a:hover
 
 
 /*last update: 24.04.2020*/
+
+
+/* #text01a */
+/* { */
+	/* color:Blue; */
+	/* font-weight:700; */
+/* } */
+
+
+
+.version_sep_new
+{
+	border-left: 4px solid #4fc45c;
+}
+
+
+.version_sep_old
+{
+	border-left: 4px solid #477ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
