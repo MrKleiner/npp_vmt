@@ -3,8 +3,19 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Notepad++ vmt</title>
+	
+	
+	
+
+<!-- <script src="./file_generator.js"></script> -->
+  
+  
+  
+  
+  
+  
 </head>
-<body>
+<body onload="bodyready()">
 	<div class="head_title">
 		<p>Notepad++ vmt syntax helper</p>
 	</div>
@@ -20,6 +31,9 @@
 	<div class="page_01">
 
 		<div class="into_text_root">
+			<p id="install">Documentation</p>
+			<p>(For default settings and "Black Board" theme)</p>
+			<p></p>
 			<p>You have to switch to the "Black Board" theme (it's a built-in theme). I highly recommend to turn on the built-in autocomplete of "quotation marks" for proper syntax highlighting.</p>
 			<p></p>
 			<p><a id="light_blue">Light blue color</a> = recognized $ parameter.</p>
@@ -43,7 +57,7 @@
 			<p>Now there are 2 versions of the dictionary:</p>
 			<p><a style="color:#4fc45c;font-weight:700;">Green</a> - a new experimental one with every single vmt parameter.</p>
 			<p></p>
-			<p><a style="color:#477ccc;font-weight:700;">Blue</a> - an old one. Doesn't has every single .vmt parameter, but was carefully handpicked.</p>
+			<p><a style="color:#477ccc;font-weight:700;">Blue</a> - an old one. Doesn't has every single .vmt parameter, but was carefully handpicked. (And not maintained anymore).</p>
 			<p></p>
 			<p></p>
 			
@@ -91,6 +105,167 @@
 			<div class="intro_img1"><!-- <div class="alignme"></div> --> <img id="second_img" src="pics/auto.png"></div>
 		</div>
 	</div>
+	
+		
+	
+	
+	
+	
+	
+	
+	<!-- new color picker shit -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="customize_title">
+		<p>Now you can customize it !</p>
+	</div>
+	
+	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Spoiler table test. A proper web designer will kill me for this -->
+		
+		
+		
+		
+		
+		
+		<!-- pootis table here -->
+			
+			
+			
+		<div class="c_custom">
+		 
+			
+			
+			
+		
+		<div class="c_cols_con">
+		
+			<div class="c_cols_box1">
+			<div class="not_button">
+				<p id="install">Settings</p>
+				<p></p>
+				<p>Tweak the settings according to your theme or just change the color of specific group. All you have to do really is just change the background color. "vmt config" is very optional.</p>
+				<p></p>
+				<p id="b_theme_cfg">Base theme config</p>
+				<p>&nbsp Your theme background &nbsp &nbsp <input type="color" id="theme_bg_picker" value="#0C1021"></p>
+				<p></p>
+				<p></p>
+				<p id="b_theme_cfg">Vmt config</p>
+				<div class="c_pickers_mtable">
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Basetexture color &nbsp &nbsp </div> <p class="cpicker_input_p"><input type="color" id="btexture_c_picker" value="#80a9ff"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Proxy names &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="pr_names_picker" value="#67d8da"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Proxy parameters &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="pr_params_picker" value="#67d8da"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp $ parameters &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="dol_params_picker" value="#67d8da"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp % parameters &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="perc_params_picker" value="#d966ff"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Numbers &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="num_col_picker" value="#c8a6ff"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Custom variables / default color &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="cvars_c_picker" value="#fbffd2"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Shaders fg &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="shader_fg_picker" value="#63fa6f"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Shaders bg &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="shader_bg_picker" value="#000000"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Word proxy &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="word_proxy_c_picker" value="#c835f9"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Material types &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="mat_types_c_picker" value="#7d81ff"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Dollar sign / percent sign &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="dsign_c_picker" value="#a4ffad"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp [ ] &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="sq_bracks_c_picker" value="#ffffff"></p></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp { } &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="def_bracks_c_picker" value="#00ff40"></p></p></div>
+				<!-- <div class="mtable_line"><div class="mtable_p"><p>&nbsp " " &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="qmarks_c_picker" value="#fbffd2"></p></p></div> -->
+				</div>
+				
+				
+				
+				
+				
+				<!-- <p><a id="light_blue">Light blue color</a> = recognized $ parameter.</p> -->
+				<!-- <p><a id="pink">Pink</a> = recognized % parameter or Proxy.</p> -->
+				<!-- <p><a id="green_black">Green with black bg</a> = recognized shader.</p> -->
+				<!-- <p><a id="light_yellow">Light yellow</a> = "word in quotation marks".</p> -->
+				<!-- <p>Dark gray <a id="gray">italic</a> = NOT recognized word and which is not in quotation marks.</p> -->
+				<!-- <p><img src="https://developer.valvesoftware.com/w/images/4/45/Tip.png" width="16" height="20"> Tip: use shortcut "crl+q" to quickly comment/uncomment lines!</p> -->
+				<!-- <p></p> -->
+				</div>
+				<button id="dl_button_pootis" onclick="updcolor()">Download customized theme</button>
+				
+			</div>
+		
+
+		
+		
+		
+		
+		
+		
+		 <div class="spoiler_stuff">
+		
+		
+			<div class="spoiler_table">
+			
+
+
+				
+				<div class="line-number"> <p>1</p> </div> <div class="in_betweener"></div> <div class="line"> <p><a class="qmark">"</a><a class="shaders">Unlittwotexture</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>2</p> </div> <div class="in_betweener"></div> <div class="line"> <p><a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>3</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="base_texture">basetexture</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="t_path">Effects/Combineshield/comshieldwall</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>4</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">texture2</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="t_path">Effects/Combineshield/comshieldwall_close</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>5</p> </div> <div class="in_betweener"></div> <div class="line"> <p><a class="comms">//&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">texture2</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="t_path">Effects/Combineshield/comshieldwall</a> <a class="qmark">"</a></a> </p> </div> <div class="line-number"> <p>6</p> </div> <div class="in_betweener"></div> <div class="line"> <p></p> </div> <div class="line-number"> <p>7</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">translucent</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>8</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">envmap</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a>env_cubemap<a class="qmark">"</a></p> </div> <div class="line-number"> <p>9</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">envmaptint</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="sq_brackets_open">[</a><a class="p_nums">1</a> <a class="p_nums">1</a> <a class="p_nums">1</a> <a class="sq_brackets_close">]</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>10</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">gnoise</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>11</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">0</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>12</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">additive</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>13</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesult</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>14</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">smallamount</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">.1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>15</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmin</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>16</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmax</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>17</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">nodecal</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>18</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">hundred</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">100</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>19</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">largeamount</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>20</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance2</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>21</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">ten</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">22</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>22</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">frameminusten</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>23</p> </div> <div class="in_betweener"></div> <div class="line"> <p></p> </div> <div class="line-number"> <p>24</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="qmark">"</a><a class="word_proxy">Proxies</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>25</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>26</p> </div> <div class="in_betweener"></div> <div class="line"> <p></p> </div> <div class="line-number"> <p>27</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">PlayerProximity</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>28</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>29</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance2</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>30</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">scale</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">.1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>31</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a>&nbsp </p> </div> <div class="line-number"> <p>32</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Subtract</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>33</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>34</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance2</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>35</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar2</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">ten</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>36</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">frameminusten</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>37</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>38</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Clamp</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>39</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>40</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">frameminusten</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>41</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">min</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="p_nums">0</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>42</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">max</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="p_nums">30</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>43</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a><a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">frame</a><a class="p_nums">2</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>44</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>45</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Clamp</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>46</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>47</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">frameminusten</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>48</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">min</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="p_nums">0</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>49</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">max</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="p_nums">30</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>50</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">frame</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>51</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>52</p> </div> <div class="in_betweener"></div> <div class="line"> <p></p> </div> <div class="line-number"> <p>53</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">PlayerProximity</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>54</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>55</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>56</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">scale</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">0.001</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>57</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a>&nbsp </p> </div> <div class="line-number"> <p>58</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">GaussianNoise</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>59</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>60</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">minVal</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">.8</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>61</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">maxVal</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>62</p> </div> <div class="in_betweener"></div> <div class="line"> <p> &nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">mean</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">.7</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>63</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">halfwidth</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">.3</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>64</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">gnoise</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>65</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>66</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Subtract</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>67</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>68</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a><a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">gnoise</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>69</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar2</a><a class="qmark">"</a><a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>70</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a><a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmin</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>71</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>72</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Multiply</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>73</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>74</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">hundred</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>75</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar2</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>76</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">largeamount</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>77</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>78</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Equals</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>79</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>80</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">playerdistance</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>81</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">envmaptint</a><a class="sq_brackets_open">[</a><a class="p_nums">1</a> <a class="sq_brackets_close">]</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>82</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a>&nbsp </p> </div> <div class="line-number"> <p>83</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Add</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>84</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>85</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar1</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmin</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>86</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">srcVar2</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">smallamount</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>87</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmax</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>88</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a>&nbsp </p> </div> <div class="line-number"> <p>89</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">Sine</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>90</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>91</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">sineperiod</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">1.08</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>92</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">sinemin</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmin</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>93</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">sinemax</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="noname_cvars">alpharesultmax</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>94</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">resultVar</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">alpha</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>95</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>96</p> </div> <div class="in_betweener"></div> <div class="line"> <p></p> </div> <div class="line-number"> <p>97</p> </div> <div class="in_betweener"></div> <div class="line"> <p></p> </div> <div class="line-number"> <p>98</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="qmark">"</a><a class="proxy_names">TextureScroll</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>99</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_open">{</a></p> </div> <div class="line-number"> <p>100</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">texturescrollvar</a><a class="qmark">"</a>&nbsp &nbsp <a class="qmark">"</a><a class="dolsign">$</a><a class="dol_params">texture2transform</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>101</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">texturescrollrate</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">.1</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>102</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp &nbsp <a class="qmark">"</a><a class="proxy_params">texturescrollangle</a><a class="qmark">"</a>&nbsp <a class="qmark">"</a><a class="p_nums">20</a><a class="qmark">"</a></p> </div> <div class="line-number"> <p>103</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp &nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>104</p> </div> <div class="in_betweener"></div> <div class="line"> <p>&nbsp <a class="def_brackets_close">}</a></p> </div> <div class="line-number"> <p>105</p> </div> <div class="in_betweener"></div> <div class="line"> <p><a class="def_brackets_close">}</a></p> </div>
+
+
+
+
+			</div>
+			
+	
+			
+			
+		</div>
+		
+
+		</div>
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="./c_switchez.js"></script>
+	<script src="./file_generator.js"></script>
+	
 
 
 </body>
