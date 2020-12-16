@@ -38,6 +38,62 @@ $("#cvars_c_picker").change(function(){
 });
 
 
+// btexture
+$("#btexture_c_picker").change(function(){
+  $(".base_texture").css('color', $(this).val());
+});
+
+
+// shaders fg
+$("#shader_fg_picker").change(function(){
+  $(".shaders").css('color', $(this).val());
+});
+
+
+// shaders bg
+$("#shader_bg_picker").change(function(){
+  $(".shaders").css('background', $(this).val());
+});
+
+
+// word proxy
+$("#word_proxy_c_picker").change(function(){
+  $(".word_proxy").css('color', $(this).val());
+});
+
+
+// mat types
+$("#mat_types_c_picker").change(function(){
+  $(".word_proxy").css('color', $(this).val());
+});
+
+
+// dsign psign
+$("#dsign_c_picker").change(function(){
+  $(".dolsign").css('color', $(this).val());
+});
+
+
+// sq bracks
+$("#sq_bracks_c_picker").change(function(){
+  $(".sq_brackets_open").css('color', $(this).val())
+  $(".sq_brackets_close").css('color', $(this).val());
+});
+
+
+// def bracks
+$("#def_bracks_c_picker").change(function(){
+  $(".def_brackets_open").css('color', $(this).val())
+  $(".def_brackets_close").css('color', $(this).val());
+});
+
+
+
+
+
+
+
+
 
 
 
