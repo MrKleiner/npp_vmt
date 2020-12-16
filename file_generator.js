@@ -70,7 +70,7 @@
 		let def_bracks_c_picker = document.getElementById("def_bracks_c_picker").value.substring(1);	
 
 		// qmarks
-		let qmarks_c_picker = document.getElementById("qmarks_c_picker").value.substring(1);	
+		// let qmarks_c_picker = document.getElementById("qmarks_c_picker").value.substring(1);	
 
 
 
