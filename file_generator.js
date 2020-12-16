@@ -188,10 +188,10 @@
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				break;					
 				
-			  case 'DELIMITERS3':
-				x[i].setAttribute('fgColor', qmarks_c_picker);
-				x[i].setAttribute('bgColor', theme_bg_picker);
-				break;					
+			  // case 'DELIMITERS3':
+				// x[i].setAttribute('fgColor', qmarks_c_picker);
+				// x[i].setAttribute('bgColor', theme_bg_picker);
+				// break;					
 				
 				
 				
