@@ -234,7 +234,7 @@
 			
 		}
 		
-		var filename = "vmt-test++.xml";
+		var filename = "vmt-test.xml";
 		var s = new XMLSerializer();
 		var str = s.serializeToString(xmlDoc).replaceAll('fuckoff', '&');
 		download(filename, str);
