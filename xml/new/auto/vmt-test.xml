@@ -659,6 +659,7 @@
 <KeyWord name="lumblendfactor4" />
 <KeyWord name="mappingheight" />
 <KeyWord name="mappingwidth" />
+<KeyWord name="masked" />
 <KeyWord name="masks" />
 <KeyWord name="masks1" />
 <KeyWord name="masks2" />
@@ -849,7 +850,6 @@
 <KeyWord name="playerdatacolor_opacity" />
 <KeyWord name="playerdatacolor_velocity" />
 <KeyWord name="playerdatacolor_wsposz" />
-<KeyWord name="playerdistance" />
 <KeyWord name="playerhealth" />
 <KeyWord name="playerhealtime" />
 <KeyWord name="playerlogo" />
