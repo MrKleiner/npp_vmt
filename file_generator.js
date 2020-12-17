@@ -39,7 +39,7 @@
 		// numbers
 		let num_col_picker = document.getElementById("num_col_picker").value.substring(1);
 		
-		// cvars
+		// cvars and default
 		let cvars_c_picker = document.getElementById("cvars_c_picker").value.substring(1);
 		
 		// btexture
@@ -73,7 +73,7 @@
 		// let qmarks_c_picker = document.getElementById("qmarks_c_picker").value.substring(1);	
 
 
-
+		
 
 
 
@@ -188,10 +188,10 @@
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				break;					
 				
-			  // case 'DELIMITERS3':
-				// x[i].setAttribute('fgColor', qmarks_c_picker);
-				// x[i].setAttribute('bgColor', theme_bg_picker);
-				// break;					
+			  case 'DELIMITERS3':
+				x[i].setAttribute('fgColor', cvars_c_picker);
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				break;
 				
 				
 				

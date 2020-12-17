@@ -32,9 +32,13 @@ $("#num_col_picker").change(function(){
 });
 
 
-
+// cvars and default
 $("#cvars_c_picker").change(function(){
   $(".noname_cvars").css('color', $(this).val());
+  $(".t_path").css('color', $(this).val());
+  
+  // qmark
+  $(".qmark").css('color', $(this).val());
 });
 
 
