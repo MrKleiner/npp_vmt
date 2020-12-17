@@ -922,10 +922,17 @@ a
 
 
 
+.madeby
+{
+	margin-top: 220px;
+	background: rgba(0, 0, 0, 0.11);
+}
 
 
-
-
+.mby:hover
+{
+	color: #d8ded3;
+}
 
 
 

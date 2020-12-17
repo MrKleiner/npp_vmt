@@ -154,7 +154,7 @@
 			<div class="not_button">
 				<p id="install">Settings</p>
 				<p></p>
-				<p>Tweak the settings according to your theme or just change the color of specific group. All you have to do really is just change the background color. "vmt config" is very optional.</p>
+				<p>Tweak the settings according to your theme or just change the color of specific group. All you have to do really is just change the background color. The reason this exists is because of how poorly Notepad++ custom languages engine works, so if your theme background is not the same as "Black Board" - the language won't work properly. To fix this you have to enter the background color of your theme into the "Your theme background" field (next to color picker). "vmt config" is very optional.</p>
 				<p></p>
 				<p id="b_theme_cfg">Base theme config</p>
 				<p class="theme_bg_cont">&nbsp <a>Your theme background</a> &nbsp &nbsp <input type="color" id="theme_bg_picker" value="#0C1021"><a id="killme_quick"> &nbsp #<input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_theme_bg_picker" maxlength = "7" value="0C1021"></a><button class="btn_set_def" onclick="set_def_theme_bg()">Default</button></p>
@@ -376,6 +376,15 @@
 				<!-- <p></p> -->
 				</div>
 				<button id="dl_button_pootis" onclick="updcolor()">Download customized theme</button>
+				
+				<div class="madeby">
+				
+					<p>Made by Mr.Kleiner</p>
+					<p>Discord: Mr.Kleiner#4600</p>
+					<p><a class="mby" href="https://steamcommunity.com/id/MrKleiner/">Steam</a></p>
+					<p><a class="mby" href="https://www.youtube.com/channel/UCf3yhp-R8S3ZEn882PJUYiA">Youtube</a></p>
+				
+				</div>
 				
 			</div>
 		
