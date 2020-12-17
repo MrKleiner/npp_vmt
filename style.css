@@ -4,7 +4,11 @@
     src: url(fonts/VerdanaPro-Light.ttf);
 }
 
-
+@font-face 
+{
+    font-family: tahoma;
+    src: url(fonts/tahoma.ttf);
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
@@ -764,6 +768,7 @@ a
 	align-self: center;
 	text-align: center;
 	
+	user-select: none;
 	
 }
 
@@ -813,26 +818,107 @@ a
 }
 
 
+.theme_bg_cont
+{
+	display: flex;
+	text-align: center;
+}
+
+.theme_bg_cont button
+{
+	margin-left: 15px;
+}
+
+.theme_bg_cont a
+{
+	text-align: center;
+}
+
+.theme_bg_cont input
+{
+	outline: none;
+	height: auto;
+}
 
 
 
 
 
+#cd_theme_bg_picker
+{
+	padding-left: 5px;
+	/* width: 30%; */
+	width: 4em;
+	height: auto;
+	
+	vertical-align: center;
+	
+	font-size: 1em;
+	background: rgba(0, 0, 0, 0.5);
+	/* font-family: tahoma;	 */
+	color: white;
+	
+	outline: none;
+	border: none;
+	
+
+}
+
+.col_text_picker
+{
+	all: unset;
+	outline: none;
+	width: 35% !important;
+	background: rgba(0, 0, 0, 0.5);
+	/* height: 100% !important; */
+	/* text-align: center; */
+	padding-left: 5px;
+}
+
+
+.cpicker_extra
+{
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+}
+
+.mt_rside
+{
+	display: flex;
+	width: 50%;
+}
+
+
+.btn_set_def
+{
+	all: unset;
+	margin-right: 2em;
+	padding: 0px 10px 0px 10px;
+	
+	outline: none;
+	border: none;
+	
+	box-shadow: inset -1px -1px 0px 0px rgba(40,46,34,1), inset 1px 1px 0px 0px rgba(136,145,128,1);
+	background: #4c5844;
+	font-family: tahoma;
+	color: #d8ded3;
+	
+	text-align: center;
+	
+	font-size: 13px;
+	
+	user-select: none;
+	
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.btn_set_def:active
+{
+	outline: none;
+	box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
+}
 
 
 

@@ -174,211 +174,27 @@
 				<p>Tweak the settings according to your theme or just change the color of specific group. All you have to do really is just change the background color. "vmt config" is very optional.</p>
 				<p></p>
 				<p id="b_theme_cfg">Base theme config</p>
-				<p class="theme_bg_cont">&nbsp <a>Your theme background</a> &nbsp &nbsp <input type="color" id="theme_bg_picker" value="#0C1021"><a id="killme_quick"> &nbsp #<input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_theme_bg_picker" maxlength = "7" value="0C1021"></a><button class="btn_set_def" onclick="set_def_theme_bg()">Default</button></p>
+				<p class="theme_bg_cont">&nbsp <a>Your theme background</a> &nbsp &nbsp <input type="color" id="theme_bg_picker" value="#0C1021"><a id="killme_quick"> &nbsp #<input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_theme_bg_picker" maxlength = "7" value="0C1021"></a><button class="btn_set_def">Default</button></p>
 				<p></p>
 				<p></p>
 				<p id="b_theme_cfg">Vmt config</p>
-				
-				
-				
-				
-					<div class="c_pickers_mtable">
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Basetexture color &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							 <p class="cpicker_input_p"><input type="color" id="btexture_c_picker" value="#80a9ff"></p>
-							 <p class="cpicker_extra">
-								<input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_btexture_picker" class="col_text_picker" value="80a9ff">
-								<button id="btexture_set_def_btn" class="btn_set_def" onclick="set_def_btexture()">Default</button>
-							 </p>
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Proxy names &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							 <p class="cpicker_input_p"><input type="color" id="pr_names_picker" value="#67d8da"></p>
-							 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_pr_names_picker" class="col_text_picker" value="67d8da">
-							 <button id="pr_names_set_def_btn" class="btn_set_def" onclick="set_def_pr_names()">Default</button>
-							 </p>
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Proxy parameters &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="pr_params_picker" value="#67d8da"></p>
-							 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_pr_params_picker" class="col_text_picker" value="67d8da">
-							 <button id="pr_params_set_def_btn" class="btn_set_def" onclick="set_def_pr_params()">Default</button>
-							 </p>						  
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp $ parameters &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							<p class="cpicker_input_p"><input type="color" id="dol_params_picker" value="#67d8da"></p>
-							 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="set_def_dol_params" class="col_text_picker" value="67d8da">
-							 <button id="dol_params_set_def_btn" class="btn_set_def" onclick="set_def_dol_params()">Default</button>
-							 </p>								
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp % parameters &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							<p class="cpicker_input_p"><input type="color" id="perc_params_picker" value="#d966ff"></p>
-							 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_perc_params_picker" class="col_text_picker" value="d966ff">
-							 <button id="perc_params_set_def_btn" class="btn_set_def" onclick="set_def_perc_params()">Default</button>
-							 </p>
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Numbers &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							<p class="cpicker_input_p"><input type="color" id="num_col_picker" value="#c8a6ff"></p>
-							 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_nums_picker" class="col_text_picker" value="c8a6ff">
-							 <button id="nums_set_def_btn" class="btn_set_def" onclick="set_def_nums()">Default</button>
-							 </p>							
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Custom variables / default color &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							<p class="cpicker_input_p"><input type="color" id="cvars_c_picker" value="#fbffd2"></p>
-							 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_cvars_w_def_picker" class="col_text_picker" value="fbffd2">
-							 <button id="cvars_def_set_def_btn" class="btn_set_def" onclick="set_defs_w_cvars()">Default</button>
-							 </p>							
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Shader fg &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="shader_fg_picker" value="#63fa6f"></p>
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_shader_picker" class="col_text_picker" value="63fa6f">
-							 <button id="shader_set_def_btn" class="btn_set_def" onclick="set_def_shader_fg()">Default</button>
-							 </p>	
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Shader bg &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-							<p class="cpicker_input_p"><input type="color" id="shader_bg_picker" value="#000000"></p>
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_shader_bg_picker" class="col_text_picker" value="000000">
-							 <button id="shader_bg_set_def_btn" class="btn_set_def" onclick="set_def_shader_bg()">Default</button>
-							 </p>								
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Word proxy &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="word_proxy_c_picker" value="#c835f9"></p>
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_wproxy_bg_picker" class="col_text_picker" value="c835f9">
-							 <button id="wproxy_set_def_btn" class="btn_set_def" onclick="set_def_wproxy()">Default</button>
-							 </p>							  
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Material types &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="mat_types_c_picker" value="#7d81ff"></p>
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_mtypes_bg_picker" class="col_text_picker" value="7d81ff">
-							 <button id="mtypes_set_def_btn" class="btn_set_def" onclick="set_def_mtype()">Default</button>
-							 </p>						  
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp Dollar sign / percent sign &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="dsign_c_picker" value="#a4ffad"></p>
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_dpsign_bg_picker" class="col_text_picker" value="a4ffad">
-							 <button id="dpsign_set_def_btn" class="btn_set_def" onclick="set_def_dsign_psign()">Default</button>
-							 </p>							  
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp [ ] &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="sq_bracks_c_picker" value="#ffffff"></p>
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_sqb_bg_picker" class="col_text_picker" value="ffffff">
-							 <button id="sqb_set_def_btn" class="btn_set_def" onclick="set_def_sq_bracks()">Default</button>
-							 </p>						  
-						  </div>
-					   </div>
-					   
-					   
-					   <div class="mtable_line">
-						  <div class="mtable_p">
-							 <p>&nbsp { } &nbsp &nbsp </p>
-						  </div>
-						  <div class="mt_rside">
-						  <p class="cpicker_input_p"><input type="color" id="def_bracks_c_picker" value="#00ff40"></p>
-						  
-						  	 <p class="cpicker_extra">
-							 <input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_defb_bg_picker" class="col_text_picker" value="00ff40">
-							 <button id="defb_set_def_btn" class="btn_set_def" onclick="set_def_def_bracks()">Default</button>
-							 </p>
-							 </div>
-					   </div>
-					</div>
+				<div class="c_pickers_mtable">
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Basetexture color &nbsp &nbsp </p></div> <div class="mt_rside"><p class="cpicker_input_p"><input type="color" id="btexture_c_picker" value="#80a9ff"></p><p class="cpicker_extra"><input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_theme_bg_picker" class="killmequick" value="0C1021"><button class="btn_set_def">Default</button></p></div></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Proxy names &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="pr_names_picker" value="#67d8da"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Proxy parameters &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="pr_params_picker" value="#67d8da"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp $ parameters &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="dol_params_picker" value="#67d8da"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp % parameters &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="perc_params_picker" value="#d966ff"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Numbers &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="num_col_picker" value="#c8a6ff"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Custom variables / default color &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="cvars_c_picker" value="#fbffd2"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Shader fg &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="shader_fg_picker" value="#63fa6f"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Shader bg &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="shader_bg_picker" value="#000000"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Word proxy &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="word_proxy_c_picker" value="#c835f9"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Material types &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="mat_types_c_picker" value="#7d81ff"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp Dollar sign / percent sign &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="dsign_c_picker" value="#a4ffad"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp [ ] &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="sq_bracks_c_picker" value="#ffffff"></p></div>
+				<div class="mtable_line"><div class="mtable_p"><p>&nbsp { } &nbsp &nbsp </p></div><p class="cpicker_input_p"><input type="color" id="def_bracks_c_picker" value="#00ff40"></p></div>
+				<!-- <div class="mtable_line"><div class="mtable_p"><p>&nbsp " " &nbsp &nbsp </div><p class="cpicker_input_p"><input type="color" id="qmarks_c_picker" value="#fbffd2"></p></p></div> -->
+				</div>
 				
 				
 				
