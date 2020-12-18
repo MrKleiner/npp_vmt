@@ -54,7 +54,6 @@
 <KeyWord name="antlion" />
 <KeyWord name="antlionsand" />
 <KeyWord name="ao" />
-<KeyWord name="aofactor" />
 <KeyWord name="aotexture" />
 <KeyWord name="armorflesh" />
 <KeyWord name="asphalt" />
@@ -394,7 +393,6 @@
 <KeyWord name="ellipsoidscale2" />
 <KeyWord name="ellipsoidup" />
 <KeyWord name="ellipsoidup2" />
-<KeyWord name="emissiontexture" />
 <KeyWord name="emissiveblendstrength " />
 <KeyWord name="empty" />
 <KeyWord name="enableclearcolor" />
@@ -692,7 +690,6 @@
 <KeyWord name="metal_box" />
 <KeyWord name="metal_seafloorcar" />
 <KeyWord name="metalgrate" />
-<KeyWord name="metalnessfactor" />
 <KeyWord name="metalpanel" />
 <KeyWord name="metalvehicle" />
 <KeyWord name="metalvent" />
@@ -715,8 +712,6 @@
 <KeyWord name="monitorscreen" />
 <KeyWord name="moondome" />
 <KeyWord name="mostlyopaque" />
-<KeyWord name="mraotexture" />
-<KeyWord name="mraotexture2" />
 <KeyWord name="mud" />
 <KeyWord name="muloutputbyalpha" />
 <KeyWord name="multiblend" />
@@ -760,8 +755,6 @@
 <KeyWord name="normalmapalphaenvmapmask" />
 <KeyWord name="normalmapalphaphongmask" />
 <KeyWord name="normalmapenvmapmask" />
-<KeyWord name="normaltexture" />
-<KeyWord name="normaltexture2" />
 <KeyWord name="noscale" />
 <KeyWord name="nosrgb" />
 <KeyWord name="notint" />
@@ -800,7 +793,6 @@
 <KeyWord name="papercup" />
 <KeyWord name="parallaxmap" />
 <KeyWord name="parallaxmapscale" />
-<KeyWord name="parallaxocclusion" />
 <KeyWord name="parallaxstrength" />
 <KeyWord name="particlesphere" />
 <KeyWord name="patch" />
@@ -819,9 +811,6 @@
 <KeyWord name="patternrotation" />
 <KeyWord name="patternscale" />
 <KeyWord name="patterntexturetransform" />
-<KeyWord name="pbr" />
-<KeyWord name="pbr_lightmapped" />
-<KeyWord name="pbr_model" />
 <KeyWord name="peel" />
 <KeyWord name="perparticleoutline" />
 <KeyWord name="phong" />
@@ -937,7 +926,6 @@
 <KeyWord name="roller" />
 <KeyWord name="rotate" />
 <KeyWord name="rotatevar" />
-<KeyWord name="roughnessfactor" />
 <KeyWord name="rttshadowbuild" />
 <KeyWord name="rubber" />
 <KeyWord name="rubbertire" />
@@ -1139,7 +1127,6 @@
 <KeyWord name="treeswayscrumblespeed" />
 <KeyWord name="treeswayscrumblestrength" />
 <KeyWord name="treeswayspeed" />
-<KeyWord name="treeswayspeedhighwindmultipler" />
 <KeyWord name="treeswayspeedhighwindmultiplier" />
 <KeyWord name="treeswayspeedlerpend" />
 <KeyWord name="treeswayspeedlerpstart" />
@@ -1159,11 +1146,7 @@
 <KeyWord name="upgrade" />
 <KeyWord name="use_in_fillrate_mode" />
 <KeyWord name="usealternateviewmatrix" />
-<KeyWord name="usedecal" />
-<KeyWord name="useenvambient" />
 <KeyWord name="userendertarget" />
-<KeyWord name="usesmoothness" />
-<KeyWord name="usetweaks" />
 <KeyWord name="uvscale" />
 <KeyWord name="vertex_lit" />
 <KeyWord name="vertexalpha" />
