@@ -381,7 +381,7 @@ $("#cd_sqb_bg_picker").change(function(){
   	// 2 - set vis feedback col
   $(".sq_brackets_close").css('color', "#" + $(this).val());
 	// 3 - from text input to col input. 1 - col inp 2 - text inp
-  document.getElementById("sq_bracks_c_picker").value = "#" + document.getElementById("sq_bracks_c_picker").value;
+  document.getElementById("sq_bracks_c_picker").value = "#" + document.getElementById("cd_sqb_bg_picker").value;
 });
 
 
