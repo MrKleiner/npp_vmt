@@ -14,7 +14,7 @@ function set_def_all()
 	set_def_pr_params(); 
 	set_def_pr_names();
 	set_def_btexture();
-	set_def_theme_bg();
+	// set_def_theme_bg();
 }
 
 // bg cfg 
