@@ -1,3 +1,22 @@
+function set_def_all()
+{
+	set_def_def_bracks();
+	set_def_sq_bracks();
+	set_def_dsign_psign();
+	set_def_mtype();
+	set_def_wproxy();
+	set_def_shader_bg();
+	set_def_shader_fg();
+	set_defs_w_cvars();
+	set_def_nums();
+	set_def_perc_params();
+	set_def_dol_params(); 
+	set_def_pr_params(); 
+	set_def_pr_names();
+	set_def_btexture();
+	set_def_theme_bg();
+}
+
 // bg cfg 
 
 $("#theme_bg_picker").change(function(){
@@ -346,7 +365,7 @@ $("#cd_dpsign_bg_picker").change(function(){
 	// 2 - set vis feedback col
   $(".dolsign").css('color', "#" + $(this).val());
 	// 3 - from text input to col input. 1 - col inp 2 - text inp
-  document.getElementById("cd_dpsign_bg_picker").value = "#" + document.getElementById("dsign_c_picker").value;
+  document.getElementById("dsign_c_picker").value = "#" + document.getElementById("cd_dpsign_bg_picker").value;
 });
 
 
@@ -596,7 +615,7 @@ function set_def_mtype()
 
 
 
-// mat types
+// dolsign w psign
 function set_def_dsign_psign()
 {
 	// def val to set
@@ -606,8 +625,9 @@ function set_def_dsign_psign()
 	// text input
 	document.getElementById("cd_dpsign_bg_picker").value = set_def_mtype.value;
 	// vis feedb
-	$(".dolsign").css('color', "#" +  set_def_mtype.value);
+	$(".dolsign").css('color', "#" + set_def_mtype.value);
 }
+
 
 
 
@@ -651,7 +671,7 @@ function set_def_def_bracks()
 
 
 
-
+// def all
 
 
 
