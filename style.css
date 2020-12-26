@@ -935,10 +935,23 @@ a
 	opacity: 0;
 }
 
+#dl_sets_btn
+{
+	/* display: none; */
+	pointer-events: none;
+	user-select: none;
+	opacity: 0;
+}
+
 
 
 
 #reset_all
+{
+	width: 46%;
+}
+
+#sets_dl
 {
 	width: 46%;
 }
@@ -956,9 +969,17 @@ a
 	{
 		width: 100%;
 	}
+	
+	#sets_dl
+	{
+		width: 100%;
+	}
 }
 
-
+#safety_margin
+{
+	margin-top: 40px;
+}
 
 
 
