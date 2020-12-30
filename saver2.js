@@ -135,7 +135,7 @@ document.getElementById("dl_to_file_btn").addEventListener("click", function(){
 
 
 	
-    var filename = "npp_vmt_language_colors.vmat";
+    var filename = "npp_vmt_language_colors.npvmat";
     
     download(filename, text);
 }, false);
