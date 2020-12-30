@@ -974,12 +974,34 @@ a
 	{
 		width: 100%;
 	}
+	
+	.save_to_file
+	{
+		width: 100%;
+	}
 }
 
-#safety_margin
+.safety_margin
 {
 	margin-top: 40px;
 }
+
+
+.upload_vmat
+{
+	/* all: unset; */
+	/* width: 35% !important; */
+	/* visibility: hidden; */
+	
+}
+
+.save_to_file
+{
+	width: 46%;
+}
+
+
+
 
 
 
