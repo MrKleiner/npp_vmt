@@ -1002,14 +1002,28 @@ a
 
 
 
+.meme
+{
+	align-self: flex-start;
+	align-items: flex-start;
+	
+	margin-top: 555px;
+	
+	margin-left: 20px;
+}
 
 
 
+/* to kinda revert the latest commit:
+
+	1 - comment the very last div which also has meme class
+	
+	2 - comment load diff only row
+	
+	3 - comment vmat_reader.js in the very end of the document
 
 
-
-
-
+*/
 
 
 

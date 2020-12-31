@@ -2,10 +2,10 @@
 //
 // If u see this, then you don't even know how happy I am knowing that someby needs that shit.
 // Please, message me on Discord: Mr.Kleiner#4600 I'm gonna be sp happy :D
-var wannadie2;
+var wannadie;
 
         $(function () {
-            $("#vmat_diff_only").bind("click", function () {
+            $("#upload_vmat").bind("click", function () {
                 var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xml)$/;
                 // if (regex.test($("#fileUpload").val().toLowerCase())) 
 				// {
@@ -17,9 +17,9 @@ var wannadie2;
                               $("#txtXml").val(e.target.result);
                              // alert(e.target.result);
                             
-                            wannadie2 = (e.target.result)
+                            wannadie = (e.target.result)
                             
-                           // alert(wannadie2);
+                           // alert(wannadie);
                             
                             
                             
@@ -28,7 +28,7 @@ var wannadie2;
                             
                             
                               var parser = new DOMParser();  
-                              doc = parser.parseFromString(wannadie2, 'text/xml');
+                              doc = parser.parseFromString(wannadie, 'text/xml');
                               var x = doc.getElementsByTagName("techdata");  
                             
                               for (i = 0;i < x.length; i++)  
@@ -121,15 +121,15 @@ var wannadie2;
 							  
 							  
 							  
-							  if (theme_bg_load != theme_bg_defcomp)
-							  {
+							  // if (theme_bg_load != test_comp)
+							  // {
 							  
 							  
 								// theme bg
 								document.getElementById("theme_bg_picker").value = "#" + theme_bg_load;
 								document.getElementById("cd_theme_bg_picker").value = theme_bg_load;
 								$(".line").css('background', "#" +  theme_bg_load);
-							  }
+							  // }
 
 
 
@@ -142,8 +142,8 @@ var wannadie2;
 
 
 
-							  if (btex_col_load != btex_col_defcomp)
-							  {
+							  // if (btex_col_load != btex_col_defcomp)
+							  // {
 								// btex_col
                             
 								// c input
@@ -152,64 +152,64 @@ var wannadie2;
 								document.getElementById("cd_btexture_picker").value = btex_col_load;
 								// v feedb
 								$(".base_texture").css('color', "#" +  btex_col_load);							
-							  }
+							  // }
                             
-	if (proxy_names_load != proxy_names_defcomp)
-	{							
+	// if (proxy_names_load != proxy_names_defcomp)
+	// {							
 	// proxy names						
 	document.getElementById("pr_names_picker").value = "#" + proxy_names_load;
 	// text input
 	document.getElementById("cd_pr_names_picker").value = proxy_names_load;
 	// vis feedb
 	$(".proxy_names").css('color', "#" +  proxy_names_load); 
-	}
+	// }
 
-	if (proxy_parameters_load != proxy_parameters_defcomp)
-	{	
+	// if (proxy_parameters_load != proxy_parameters_defcomp)
+	// {	
 	// proxy params	
 	document.getElementById("pr_params_picker").value = "#" + proxy_parameters_load;
 	// text input
 	document.getElementById("cd_pr_params_picker").value = proxy_parameters_load;
 	// vis feedb
 	$(".proxy_params").css('color', "#" +  proxy_parameters_load);	
-	}
+	// }
 	
-	if (dol_parameters_load != dol_parameters_defcomp)
-	{	
+	// if (dol_parameters_load != dol_parameters_defcomp)
+	// {	
 	// dollar params	
 	document.getElementById("dol_params_picker").value = "#" + dol_parameters_load;
 	// text input
 	document.getElementById("set_def_dol_params").value = dol_parameters_load;
 	// vis feedb
 	$(".dol_params").css('color', "#" +  dol_parameters_load);
-	}
+	// }
 	
 	
-	if (perc_parameters_load != perc_parameters_defcomp)
-	{
+	// if (perc_parameters_load != perc_parameters_defcomp)
+	// {
 	// perc params
 	document.getElementById("perc_params_picker").value = "#" + perc_parameters_load;
 	// text input
 	document.getElementById("cd_perc_params_picker").value = perc_parameters_load;
 	// vis feedb
 	$(".perc_params_aw").css('color', "#" +  perc_parameters_load);
-	}
+	// }
 	
 	
-	if (numbers_load != numbers_defcomp)
-	{	
+	// if (numbers_load != numbers_defcomp)
+	// {	
 	// numbers
 	document.getElementById("num_col_picker").value = "#" + numbers_load;
 	// text input
 	document.getElementById("cd_nums_picker").value = numbers_load;
 	// vis feedb
 	$(".p_nums").css('color', "#" +  numbers_load);
-	}
+	// }
 	
 	
 	
-	if (cvars_def_load != cvars_def_defcomp)
-	{		
+	// if (cvars_def_load != cvars_def_defcomp)
+	// {		
 	// cvars w def
 	document.getElementById("cvars_c_picker").value = "#" + cvars_def_load;
 	// text input
@@ -218,63 +218,63 @@ var wannadie2;
 	$(".noname_cvars").css('color', "#" +  cvars_def_load);
 	$(".t_path").css('color', "#" +  cvars_def_load);
 	$(".qmark").css('color', "#" +  cvars_def_load);
-	}
+	// }
 	
-	if (shader_fg_load != shader_fg_defcomp)
-	{		
+	// if (shader_fg_load != shader_fg_defcomp)
+	// {		
 	// shader fg
 	document.getElementById("shader_fg_picker").value = "#" + shader_fg_load;
 	// text input
 	document.getElementById("cd_shader_picker").value = shader_fg_load;
 	// vis feedb
 	$(".shaders").css('color', "#" +  shader_fg_load);
-	}
+	// }
 	
 	
 	
-	if (shader_bg_load != shader_bg_defcomp)
-	{	
+	// if (shader_bg_load != shader_bg_defcomp)
+	// {	
 	// shader bg
 	document.getElementById("shader_bg_picker").value = "#" + shader_bg_load;
 	// text input
 	document.getElementById("cd_shader_bg_picker").value = shader_bg_load;
 	// vis feedb
 	$(".shaders").css('background', "#" +  shader_bg_load);
-	}
+	// }
 	
-	if (wproxy_load != wproxy_defcomp)
-	{		
+	// if (wproxy_load != wproxy_defcomp)
+	// {		
 	// w proxy
 	document.getElementById("word_proxy_c_picker").value = "#" + wproxy_load;
 	// text input
 	document.getElementById("cd_wproxy_bg_picker").value = wproxy_load;
 	// vis feedb
 	$(".word_proxy").css('color', "#" +  wproxy_load);
-	}
+	// }
 	
-	if (mat_types_load != mat_types_defcomp)
-	{		
+	// if (mat_types_load != mat_types_defcomp)
+	// {		
 	// mat types
 	document.getElementById("mat_types_c_picker").value = "#" + mat_types_load;
 	// text input
 	document.getElementById("cd_mtypes_bg_picker").value = mat_types_load;
 	// vis feedb
 	$(".mat_types").css('color', "#" +  mat_types_load);	
-	}
+	// }
 	
-	if (dsign_psign_load != dsign_psign_defcomp)
-	{	
+	// if (dsign_psign_load != dsign_psign_defcomp)
+	// {	
 	// dolsign w psign
 	document.getElementById("dsign_c_picker").value = "#" + dsign_psign_load;
 	// text input
 	document.getElementById("cd_dpsign_bg_picker").value = dsign_psign_load;
 	// vis feedb
 	$(".dolsign").css('color', "#" + dsign_psign_load);	
-	}
+	// }
 	
 	
-	if (sq_bracks_load != sq_bracks_defcomp)
-	{		
+	// if (sq_bracks_load != sq_bracks_defcomp)
+	// {		
 	// sq bracks
 	document.getElementById("sq_bracks_c_picker").value = "#" + sq_bracks_load;
 	// text input
@@ -283,14 +283,14 @@ var wannadie2;
 	$(".sq_brackets_open").css('color', "#" +  sq_bracks_load);
 	
 	$(".sq_brackets_close").css('color', "#" +  sq_bracks_load);
-	}
+	// }
 	
 	
 	
 	
 	
-	if (def_bracks_load != def_bracks_defcomp)
-	{		
+	// if (def_bracks_load != def_bracks_defcomp)
+	// {		
 	// Def bracks
 	document.getElementById("def_bracks_c_picker").value = "#" + def_bracks_load;
 	// text input
@@ -299,7 +299,7 @@ var wannadie2;
 	$(".def_brackets_open").css('color', "#" +  def_bracks_load);
 	
 	$(".def_brackets_close").css('color', "#" +  def_bracks_load);
-	}
+	// }
 	
 	
 	// DO THE COMMENTS FINALLY FUCK
