@@ -57,6 +57,9 @@ document.getElementById("sets_dl").addEventListener("click", function(){
 	+ "\n"
 	+ " { } : "
 	+ document.getElementById("cd_defb_bg_picker").value
+	+ "\n"
+	+ "Comments: "
+	+ document.getElementById("cd_comms_bg_picker").value
     var filename = "npp_vmt_language_colors.txt";
     
     download(filename, text);

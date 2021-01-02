@@ -72,7 +72,8 @@
 		// qmarks
 		// let qmarks_c_picker = document.getElementById("qmarks_c_picker").value.substring(1);	
 
-
+		// comments
+		let comms_c_picker = document.getElementById("cd_comms_bg_picker").value.substring(1);
 		
 
 
@@ -101,12 +102,12 @@
 
 
 			  case 'COMMENTS':
-				// x[i].setAttribute('fgColor', cvars_c_picker);
+				x[i].setAttribute('fgColor', comms_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				break;
 				
 			  case 'LINE COMMENTS':
-				// x[i].setAttribute('fgColor', cvars_c_picker);
+				x[i].setAttribute('fgColor', comms_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				break;				
 				

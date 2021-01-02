@@ -14,6 +14,7 @@ function set_def_all()
 	set_def_pr_params(); 
 	set_def_pr_names();
 	set_def_btexture();
+	set_def_comments()
 	// set_def_theme_bg();
 }
 
@@ -154,7 +155,13 @@ $("#perc_params_picker").change(function(){
 
 
 
-
+// comments
+$("#comms_c_picker").change(function(){
+  $(".comms").css('color', $(this).val());
+   // 1 - text input 2 - color input
+  document.getElementById("cd_comms_bg_picker").value = document.getElementById("comms_c_picker").value.substring(1);  
+  
+});
 
 
 
@@ -397,6 +404,37 @@ $("#cd_defb_bg_picker").change(function(){
 	// 3 - from text input to col input. 1 - col inp 2 - text inp
   document.getElementById("def_bracks_c_picker").value = "#" + document.getElementById("cd_defb_bg_picker").value;
 });
+
+
+
+
+
+// comments
+
+// from text inp to col inp. 1 - text input
+$("#cd_comms_bg_picker").change(function(){
+	// 2 - set vis feedback col
+  $(".comms").css('color', "#" + $(this).val());
+	// 3 - from text input to col input. 1 - col inp 2 - text inp
+  document.getElementById("comms_c_picker").value = "#" + document.getElementById("cd_comms_bg_picker").value;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -662,6 +700,20 @@ function set_def_def_bracks()
 	$(".def_brackets_close").css('color', "#" +  set_def_mtype.value);
 }
 
+
+
+
+function set_def_comments() 
+{
+	// def val to set
+	set_def_dol_params.value = "f5c48b";
+	// col input
+	document.getElementById("comms_c_picker").value = "#" + set_def_dol_params.value;
+	// text input
+	document.getElementById("cd_comms_bg_picker").value = set_def_dol_params.value;
+	// vis feedb
+	$(".comms").css('color', "#" +  set_def_dol_params.value);
+}
 
 
 

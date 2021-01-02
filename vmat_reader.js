@@ -302,7 +302,16 @@ var wannadie2;
 	}
 	
 	
-	// DO THE COMMENTS FINALLY FUCK
+	if (comments_load != comments_defcomp)
+	{		
+	// color picker
+	document.getElementById("comms_c_picker").value = "#" + comments_load;
+	// text input
+	document.getElementById("cd_comms_bg_picker").value = comments_load;
+	// vis feedb
+	$(".comms").css('color', "#" + comments_load);
+	
+	}
                             
                            
                             

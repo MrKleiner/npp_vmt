@@ -60,6 +60,9 @@ document.getElementById("dl_to_file_btn").addEventListener("click", function(){
 	+ "Word proxy: "
 	+ document.getElementById("cd_wproxy_bg_picker").value
 	+ "\n"
+	+ "Comments: "
+	+ document.getElementById("cd_comms_bg_picker").value
+	+ "\n"
 	+ "Material types: "
 	+ document.getElementById("cd_mtypes_bg_picker").value
 	+ "\n"
@@ -126,7 +129,7 @@ document.getElementById("dl_to_file_btn").addEventListener("click", function(){
 	+ "\n"
 	+	"<def_bracks>" + document.getElementById("cd_defb_bg_picker").value + "</def_bracks>"
 	+ "\n"
-	+	"<comments>" + "f5c48b" + "</comments>"
+	+	"<comments>" + document.getElementById("cd_comms_bg_picker").value + "</comments>"
 	+ "\n"
 	+	"<wat>I told ya no to scroll down ya frick</wat>"
 	+ "\n"
