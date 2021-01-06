@@ -81,7 +81,6 @@
 <KeyWord name="basetexture4" />
 <KeyWord name="basetexturetransform" />
 <KeyWord name="basetexturetransform2" />
-<KeyWord name="basetimeslightmaptimesdetail" />
 <KeyWord name="basettexture" />
 <KeyWord name="beachfoam" />
 <KeyWord name="benefactorlevel" />
@@ -175,6 +174,7 @@
 <KeyWord name="clampt" />
 <KeyWord name="clearcolor" />
 <KeyWord name="clientshader" />
+<KeyWord name="cloakcolortint" />
 <KeyWord name="cloakfactor" />
 <KeyWord name="cloakpassenabled" />
 <KeyWord name="cloaktint" />
@@ -558,6 +558,7 @@
 <KeyWord name="glint" />
 <KeyWord name="glintu" />
 <KeyWord name="glintv" />
+<KeyWord name="glossiness" />
 <KeyWord name="glow" />
 <KeyWord name="glowalpha" />
 <KeyWord name="glowcolor" />
@@ -860,6 +861,7 @@
 <KeyWord name="phongbasetint2" />
 <KeyWord name="phongboost" />
 <KeyWord name="phongboost2" />
+<KeyWord name="phongbrightnessscalar" />
 <KeyWord name="phongcolortint" />
 <KeyWord name="phongdisablehalflambert" />
 <KeyWord name="phongexponent" />
@@ -882,6 +884,7 @@
 <KeyWord name="player_control_clip" />
 <KeyWord name="playerclip" />
 <KeyWord name="playerclip " />
+<KeyWord name="playercolor" />
 <KeyWord name="playerdamagetime" />
 <KeyWord name="playerdatacolor" />
 <KeyWord name="playerdatacolor_camdepth" />
@@ -991,6 +994,7 @@
 <KeyWord name="selfillumfresnel" />
 <KeyWord name="selfillumfresnelenabledthisframe" />
 <KeyWord name="selfillumfresnelminmaxexp" />
+<KeyWord name="selfillummap" />
 <KeyWord name="selfillummask" />
 <KeyWord name="selfillummaskscale" />
 <KeyWord name="selfillumtexture" />
@@ -1178,6 +1182,7 @@
 <KeyWord name="underwaterclearcolorcap" />
 <KeyWord name="underwateroverlay" />
 <KeyWord name="uniformnoise" />
+<KeyWord name="unlit" />
 <KeyWord name="unlitfactor" />
 <KeyWord name="unlitgeneric" />
 <KeyWord name="unlittwotexture" />
