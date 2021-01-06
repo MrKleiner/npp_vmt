@@ -222,6 +222,25 @@ a
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .dl_old:hover
 {
 	color: #477ccc;
@@ -1024,6 +1043,74 @@ a
 
 
 */
+
+
+
+
+
+
+/* New fancy bs date hover info */
+
+
+
+
+
+/*
+
+.dl_new[rdate]:hover::after 
+{
+  content: attr(rdate);
+  position: absolute;
+  left: -36%;
+  top: -50px;
+  min-width: 200px;
+  border: 0px #aaaaaa solid;
+  border-radius: 999px;
+  background-color: white;
+  padding: 12px;
+  color: #000000;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.dl_new:hover::before
+{
+  content: "";
+  position: absolute;
+  left: 36%;
+  top: -25px;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  transform: rotateZ(45deg);
+  z-index: 1;
+  padding: 12px;
+}
+
+*/
+
+.dl_new[rdate] 
+{
+  position: relative;
+  /* text-decoration: underline; */
+  /* color: #00F; */
+  /* cursor: help; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

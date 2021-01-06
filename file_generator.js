@@ -73,7 +73,7 @@
 		// let qmarks_c_picker = document.getElementById("qmarks_c_picker").value.substring(1);	
 
 		// comments
-		let comms_c_picker = document.getElementById("cd_comms_bg_picker").value.substring(1);
+		let comms_c_picker = document.getElementById("cd_comms_bg_picker").value;
 		
 
 
@@ -97,6 +97,7 @@
 			  case 'DEFAULT':
 				x[i].setAttribute('fgColor', cvars_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;
 
 
@@ -104,16 +105,19 @@
 			  case 'COMMENTS':
 				x[i].setAttribute('fgColor', comms_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;
 				
 			  case 'LINE COMMENTS':
 				x[i].setAttribute('fgColor', comms_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "workspaceExt");
 				break;				
 				
 			  case 'NUMBERS':
 				x[i].setAttribute('fgColor', num_col_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 				
@@ -127,85 +131,130 @@
 			  case 'KEYWORDS1':
 				x[i].setAttribute('fgColor', btexture_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'KEYWORDS2':
 				x[i].setAttribute('fgColor', perc_params_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;	
 				
 			  case 'KEYWORDS3':
 				x[i].setAttribute('fgColor', shader_fg_picker);
 				x[i].setAttribute('bgColor', shader_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'KEYWORDS4':
 				x[i].setAttribute('fgColor', word_proxy_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'KEYWORDS5':
 				x[i].setAttribute('fgColor', dol_params_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'KEYWORDS6':
 				x[i].setAttribute('fgColor', pr_names_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'KEYWORDS7':
 				x[i].setAttribute('fgColor', mat_types_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "1347");
 				break;		
 				
 			  case 'KEYWORDS8':
 				x[i].setAttribute('fgColor', pr_params_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;	
 				
 			  case 'OPERATORS':
 				x[i].setAttribute('fgColor', dsign_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;				
 				
 			  case 'FOLDER IN CODE1':
 				x[i].setAttribute('fgColor', def_bracks_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;				
 				
 			  case 'FOLDER IN CODE2':
 				// x[i].setAttribute('fgColor', pr_params_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'FOLDER IN COMMENT':
 				// x[i].setAttribute('fgColor', pr_params_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;						
 				
 			  case 'DELIMITERS1':
 				x[i].setAttribute('fgColor', sq_bracks_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;					
 				
 			  case 'DELIMITERS3':
-				x[i].setAttribute('fgColor', cvars_c_picker);
+				x[i].setAttribute('fgColor', def_bracks_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
 				break;
 				
 				
 				
+				// other, unused stuff, but it also needs some attention
 				
 				
 				
+			  case 'DELIMITERS2':
+				x[i].setAttribute('fgColor', "ffffff");
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
+				break;				
 				
 				
+			  case 'DELIMITERS4':
+				x[i].setAttribute('fgColor', "ffffff");
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
+				break;					
+				
+			  case 'DELIMITERS5':
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
+				break;					
 				
 				
+			  case 'DELIMITERS6':
+				x[i].setAttribute('fgColor', "ffffff");
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
+				break;					
 				
 				
+			  case 'DELIMITERS7':
+				x[i].setAttribute('fgColor', "ffffff");
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
+				break;					
 				
+			  case 'DELIMITERS8':
+				x[i].setAttribute('fgColor', "ffffff");
+				x[i].setAttribute('bgColor', theme_bg_picker);
+				x[i].setAttribute('fontName', "");
+				break;						
 				
 				
 				
@@ -237,6 +286,11 @@
 		
 		var filename = "vmt-test.xml";
 		var s = new XMLSerializer();
+		// 06-01-2021 - Added fuckoffs for fucked up font name tags
+		
+		
+		
+		
 		var str = s.serializeToString(xmlDoc).replaceAll('fuckoff', '&');
 		download(filename, str);
 	}
