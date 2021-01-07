@@ -71,6 +71,7 @@
 <KeyWord name="basemapalphaphongmask" />
 <KeyWord name="basemapalphphongmask" />
 <KeyWord name="basemapluminancephongmask" />
+<KeyWord name="basenormalmap" />
 <KeyWord name="basephongboost" />
 <KeyWord name="basephongexponent" />
 <KeyWord name="baserock" />
@@ -445,6 +446,7 @@
 <KeyWord name="envmapmaskscale" />
 <KeyWord name="envmapmasktransform" />
 <KeyWord name="envmapmode" />
+<KeyWord name="envmapoptional" />
 <KeyWord name="envmapsaturation" />
 <KeyWord name="envmapsphere" />
 <KeyWord name="envmaptint" />
@@ -494,6 +496,7 @@
 <KeyWord name="fleshborderwidth" />
 <KeyWord name="fleshcubetexture" />
 <KeyWord name="fleshdebugforcefleshon" />
+<KeyWord name="flesheffectcenterradius" />
 <KeyWord name="flesheffectcenterradius1" />
 <KeyWord name="flesheffectcenterradius2" />
 <KeyWord name="flesheffectcenterradius3" />
@@ -534,6 +537,7 @@
 <KeyWord name="fogstart" />
 <KeyWord name="foliage" />
 <KeyWord name="forcealphawrite" />
+<KeyWord name="forcebump" />
 <KeyWord name="forcecheap" />
 <KeyWord name="forceenvmap" />
 <KeyWord name="forceexpensive" />
@@ -691,6 +695,7 @@
 <KeyWord name="localrefract" />
 <KeyWord name="localrefractdepth" />
 <KeyWord name="lowqualityflashlightshadows" />
+<KeyWord name="lumblendfactor" />
 <KeyWord name="lumblendfactor2" />
 <KeyWord name="lumblendfactor3" />
 <KeyWord name="lumblendfactor4" />
@@ -714,6 +719,7 @@
 <KeyWord name="maxfadesize" />
 <KeyWord name="maxfogdensityscalar" />
 <KeyWord name="maxlight" />
+<KeyWord name="maxlumframeblend" />
 <KeyWord name="maxlumframeblend1" />
 <KeyWord name="maxlumframeblend2" />
 <KeyWord name="maxreflectivity" />
@@ -1006,6 +1012,7 @@
 <KeyWord name="shadow" />
 <KeyWord name="shadowcontrast" />
 <KeyWord name="shadowdepth" />
+<KeyWord name="shadowmodel" />
 <KeyWord name="shadowrimboost" />
 <KeyWord name="shadowsaturation" />
 <KeyWord name="shadowsaturationbounds" />
@@ -1088,6 +1095,7 @@
 <KeyWord name="surfaceprop3" />
 <KeyWord name="surfaceprop4" />
 <KeyWord name="surfacepropalpha" />
+<KeyWord name="surfacepropalphafilter" />
 <KeyWord name="surfacetexture" />
 <KeyWord name="tablet_radar_level_name" />
 <KeyWord name="tabletupgradeproxy" />
@@ -1108,6 +1116,7 @@
 <KeyWord name="texture1" />
 <KeyWord name="texture1_lumend" />
 <KeyWord name="texture1_lumstart" />
+<KeyWord name="texture1_uvscale" />
 <KeyWord name="texture2" />
 <KeyWord name="texture2_blendend" />
 <KeyWord name="texture2_blendmode" />
@@ -1190,6 +1199,7 @@
 <KeyWord name="upgrade" />
 <KeyWord name="use_in_fillrate_mode" />
 <KeyWord name="usealternateviewmatrix" />
+<KeyWord name="useinstancing" />
 <KeyWord name="userendertarget" />
 <KeyWord name="uvscale" />
 <KeyWord name="vertex_lit" />
@@ -1279,6 +1289,7 @@
 <KeyWord name="x360appchooser" />
 <KeyWord name="yellow" />
 <KeyWord name="yellowlevel" />
+<KeyWord name="yuv" />
 <KeyWord name="znearer" />
 <KeyWord name="zombieflesh" />
 <KeyWord name="zonemode" />
