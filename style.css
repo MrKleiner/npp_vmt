@@ -493,7 +493,7 @@ a
   position: relative;
   width: 50%;
   height: auto;
-  background: green;
+  /* background: green; */
 }
 
 
@@ -998,6 +998,11 @@ a
 	{
 		width: 100%;
 	}
+	
+	.dropdown_menu_descr
+	{
+		width: 69% !important;
+	}
 }
 
 .safety_margin
@@ -1105,6 +1110,279 @@ a
 }
 
 
+
+
+
+
+
+/*
+
+==============================
+Wasted like 3 days on this fucking shit. Who needs it?? Why am I doing it ???
+Why do I disrespect myself ???
+
+This is some sort of fucking addiction for me. If I want to do it, then I can't stop until I finish...
+And it doesnt fucking matter what the fuck it is. It could be fucking rocket science, but I'd still want to do it, even though
+I have big problems with math and I'm a terrible coder...
+
+Fuck
+
+Don't fo this to yourself. Don't waste your time.
+
+
+==============================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fucking bs. Just make a simple js switch */
+
+.c_row
+{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-top: 0px;
+  margin-left: 15px;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.c_row:hover .cbox_label
+{
+  color: #bdc2b8;
+ 
+}
+
+
+.checkbox_body_square
+{
+  display: flex;
+  width: 15px;
+  height: 15px;
+    background-color: #3c4434;
+    box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+  
+}
+
+.checkbox_inner_sqare
+{
+  width: 2px;
+  height: 6px;
+  background: none;
+  opacity: 1;
+  transform: rotate(45deg);
+  border: solid #c5b64f;
+  border-width: 0 2px 2px 0;
+  margin-bottom: 2px;
+  
+}
+
+.checkbox_inner_unset
+{
+  opacity: 0 !important;
+ 
+}
+
+
+
+
+.blocker
+{
+  background: black;
+  z-index: 999;
+}
+
+
+.c_row_unclickable
+{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 10px;
+  
+}
+
+
+.pootis
+{
+  user-select: none;
+}
+
+
+
+/* circular one*/
+
+
+.checkbox_circular
+{
+  display: flex;
+  width: 15px;
+  height: 15px;
+    background-color: #3c4434;
+    box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  
+}
+
+
+.checkbox_inner_round
+{
+  width: 7px;
+  height: 7px;
+  background: #c5b64f;
+  opacity: 1;
+  margin-bottom: 0px;
+  border-radius: 999px;
+  
+}
+
+.set_single_cbox_row_part
+{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 0px;
+ 
+}
+
+.absolute_dropdown
+{
+  background: red;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  
+  top: 50px;
+}
+
+.pootis2
+{
+  display: none;
+  margin-top: 20px;
+}
+
+
+.dropdown_menu
+{
+  position: absolute;
+  background: #4b5742;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  box-shadow: inset -1px -1px 0px 0px rgba(40,46,34,1), inset 1px 1px 0px 0px rgba(136,145,128,1);
+  margin-top: 2px;
+}
+
+
+.dropdown_menu_descr
+{
+  display: flex;
+  background: #3e4637;
+  padding: 5px 10px 5px 10px;
+  margin: 0px;
+  user-select: none;
+  box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
+  align-items: center;
+  width: 50%;
+  /* width: auto; */
+}
+
+.hidden_display_none
+{
+  display: none !important;
+}
+
+
+.checkbox_part
+{
+  display: flex;
+  align-items: center;
+  
+  height: 100%;
+  width: auto;
+}
+
+
+
+
+.mrk_checkbox_group
+{
+	font-family: tahoma;
+}
+
+
+
+
+
+
+.dropdown_menu_descr
+{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+  color: white;
+}
+
+
+
+.cbox_label
+{
+  padding: 0px;
+  color: #d9dfd4;
+  padding-left: 10px;
+  pointer-events: none;
+  user-select: none;
+  margin: 0px;
+  
+  font-size: initial !important;
+  
+  font-weight: 300;
+  
+  
+}
+
+
+
+.dropdown_triangle
+{
+  height: 10px;
+  width: 10px;
+  /* background: red; */
+  
+  background-image: url('pics/triangle_green.svg');
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+
+
+
+.load_selector_menu_container
+{
+	margin-left: 10px;
+}
 
 
 
