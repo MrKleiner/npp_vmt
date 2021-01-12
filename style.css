@@ -929,6 +929,8 @@ a
 {
 	outline: none;
 	box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
+	padding: 1px 9px 0px 10px;
+	margin-left: 15px;
 }
 
 
