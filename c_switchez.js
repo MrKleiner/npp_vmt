@@ -18,6 +18,26 @@ function set_def_all()
 	// set_def_theme_bg();
 }
 
+function set_def_all_and_bg()
+{
+	set_def_def_bracks();
+	set_def_sq_bracks();
+	set_def_dsign_psign();
+	set_def_mtype();
+	set_def_wproxy();
+	set_def_shader_bg();
+	set_def_shader_fg();
+	set_defs_w_cvars();
+	set_def_nums();
+	set_def_perc_params();
+	set_def_dol_params(); 
+	set_def_pr_params(); 
+	set_def_pr_names();
+	set_def_btexture();
+	set_def_comments()
+	set_def_theme_bg();
+}
+
 // bg cfg 
 
 $("#theme_bg_picker").change(function(){
