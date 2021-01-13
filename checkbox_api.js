@@ -3,7 +3,7 @@
 $(document).ready(function(){
   $("#dropdown1").click(function(){
     $("#dropdownmenu1").toggleClass("hidden_display_none");
-    
+    $("#dropdown_master").removeClass("dropdown_menu_resetter_hidden");
  
   });
 });
@@ -16,10 +16,23 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#dropdown2").click(function(){
     $("#dropdownmenu2").toggleClass("hidden_display_none");
-    
+    $("#dropdown_master").removeClass("dropdown_menu_resetter_hidden");
  
   });
 });
+
+
+
+// toggle drowpodwn master
+
+$(document).ready(function(){
+  $("#dropdown_master").click(function(){
+    $(".mrk_checkbox_group").addClass("hidden_display_none");
+    $("#dropdown_master").addClass("dropdown_menu_resetter_hidden");
+ 
+  });
+});
+
 
 
 

@@ -494,6 +494,7 @@ a
   width: 50%;
   height: auto;
   /* background: green; */
+  z-index: 10;
 }
 
 
@@ -929,8 +930,8 @@ a
 {
 	outline: none;
 	box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
-	padding: 1px 9px 0px 10px;
-	margin-left: 15px;
+	/* padding: 1px 9px 0px 10px; */
+	/* margin-left: 15px; */
 }
 
 
@@ -1332,6 +1333,7 @@ Don't fo this to yourself. Don't waste your time.
 .mrk_checkbox_group
 {
 	font-family: tahoma;
+	z-index: 120;
 }
 
 
@@ -1383,8 +1385,50 @@ Don't fo this to yourself. Don't waste your time.
 
 .load_selector_menu_container
 {
+	position: static;
 	margin-left: 10px;
+	z-index: 100 !important;
 }
+
+
+
+.dropdown_menu_resetter
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: none;
+	/* z-index: 50; */
+}
+
+
+
+.dropdown_menu_resetter_hidden
+{
+	display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
