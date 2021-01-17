@@ -33,9 +33,9 @@
 
 		<div class="into_text_root">
 			<p id="install">Documentation</p>
-			<p>(For default settings and "Black Board" theme. If you don't want to use "Black Board" theme - read this Documentation and scroll down to the <a href="#customize_scroll">customizer zone.</a>)</p>
+			<p>(You can easily customize colors in <a href="#customize_scroll">customizer zone</a>)</p>
 			<p></p>
-			<p>You have to switch to the "Black Board" theme (it's a built-in theme). I highly recommend to turn on the built-in autocomplete of "quotation marks" for proper syntax highlighting.</p>
+			<p>I highly recommend to turn on the built-in autocomplete of "quotation marks" for proper syntax highlighting.</p>
 			<p></p>
 			<p><a id="light_blue">Light blue color</a> = recognized $ parameter.</p>
 			<p><a id="pink">Pink</a> = recognized % parameter or Proxy.</p>
@@ -162,7 +162,8 @@
 			<div class="not_button">
 				<p id="install">Settings</p>
 				<p></p> 
-				<p>Tweak the settings according to your theme or just change the color of specific group and see a real-time preview on the example from the right. All you have to do really is just change the background color.</p><p> The reason this exists is because of how poorly Notepad++ custom languages engine works, so if your theme background is not the same as "Black Board" - the language won't work properly. To fix this you have to enter the background color of your theme into the "Your theme background" field (next to color picker) and then click "Download customized theme". "Vmt config" section is very optional.</p>
+				<p>Change the color of specific group and see a real-time preview on the example from the right</p>
+				<!-- <p>The reason this exists is because of how poorly Notepad++ custom languages engine works, so if your theme background is not the same as "Black Board" - the language won't work properly. To fix this you have to enter the background color of your theme into the "Your theme background" field (next to color picker) and then click "Download customized theme". "Vmt config" section is very optional.</p> -->
 				<p></p>
 				<p id="b_theme_cfg">Base theme config</p>
 				<p class="theme_bg_cont">&nbsp <a>Your theme background</a> &nbsp &nbsp <input type="color" id="theme_bg_picker" value="#0C1021"><a id="killme_quick"> &nbsp #<input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_theme_bg_picker" maxlength = "7" value="0C1021"></a><button class="btn_set_def" onclick="set_def_theme_bg()">Default</button></p>
