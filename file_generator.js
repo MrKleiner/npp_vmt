@@ -95,7 +95,7 @@
 			switch (nameAttr) {
 				
 			  case 'DEFAULT':
-				x[i].setAttribute('fgColor', "A2A2A2");
+				x[i].setAttribute('fgColor', cvars_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				x[i].setAttribute('fontName', "");
 				break;
