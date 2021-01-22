@@ -24,7 +24,12 @@
 				myxmlstr = xhr.responseText;				
 				myxmlstresc = myxmlstr.replaceAll('&', 'fuckoff');
 				xmlDoc = parser.parseFromString(myxmlstresc, "text/xml");
-				got_preset_now_read_other_themes();
+				
+				// check for quickload
+				if ($("#ilist_quickread_checkbox_02a").hasClass("checkbox_set_true"))
+				{
+					got_preset_now_read_other_themes();
+				}
 			}
 		}
 		

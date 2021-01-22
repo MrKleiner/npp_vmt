@@ -38,12 +38,24 @@ $(document).ready(function(){
 	
 	console.log("mrk_ilist_entry clicked");
 	
-	get_preset_other_themes();
+	// get_preset_other_themes();
+	
+	// call appropriate function
+	$(find_display).find(".mrk_ilist_function_storage").trigger("click");
+	
+	// hide list and hide the ghost
+	
+    $(find_display).find(".mrk_ilist_dropdown").toggleClass("ilist_hidden");
+    $(find_display).find(".mrk_ilist_dropdown").removeClass("dropdown_menu_resetter_hidden");
+	
+	// $('#billing_state_id').trigger('change');
 	
 	
 	// YOU CAN TRIGGER ONCLICK MANUALLY. NAME A FUNCTION IN ONCLICK.
 	
 	// DIV ELEMENT ALL EVENTS.
+	
+	// select event will work just fine.
 
  
 
@@ -54,7 +66,10 @@ $(document).ready(function(){
 
 
 
-
+function select_alert()
+{
+	alert("fuckyou");
+}
 
 
 
