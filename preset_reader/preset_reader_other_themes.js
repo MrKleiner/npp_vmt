@@ -1,4 +1,6 @@
 
+
+
 	var parser = new DOMParser();
 	var xmlDoc;
 	var textarea;
@@ -7,7 +9,10 @@
 	function get_preset_other_themes()
 	{
 		
-
+		
+		
+		
+		console.log("get_preset_other_themes_begin");
 		
 		var preset_super_path = $("#preset_ilist_dropdown_02").attr("mrk_active_preset_path");
 		
@@ -19,6 +24,7 @@
 				myxmlstr = xhr.responseText;				
 				myxmlstresc = myxmlstr.replaceAll('&', 'fuckoff');
 				xmlDoc = parser.parseFromString(myxmlstresc, "text/xml");
+				got_preset_now_read_other_themes();
 			}
 		}
 		
@@ -45,6 +51,8 @@
 		
 		// Now that we got what we wanted - proceed to checking whether to apply it instantly or not.
 		// We now proceed to the next function where all the checks for checkboxes are made.
+		
+		/*
 		got_xml_now_check_checkbox_other_themes();
 
 
@@ -63,8 +71,8 @@
 			
 			
 		}
-		
-		
+		*/
+		console.log("get_preset_other_themes_end");
 	}
 	
 	

@@ -17,6 +17,11 @@ $(document).ready(function(){
 
 // base api
 
+
+
+
+
+
 $(document).ready(function(){
   $(".mrk_ilist_entry").click(function(){
     
@@ -30,8 +35,126 @@ $(document).ready(function(){
     
     // set tech data. Path
     $(find_display).find(".mrk_ilist_active_item_display").attr( "mrk_active_preset_path",current_set_path);
+	
+	console.log("mrk_ilist_entry clicked");
+	
+	get_preset_other_themes();
+	
+	
+	// YOU CAN TRIGGER ONCLICK MANUALLY. NAME A FUNCTION IN ONCLICK.
+	
+	// DIV ELEMENT ALL EVENTS.
 
  
 
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function ilist_click(triggeree)
+{
+    
+    var current_set_path = $(triggeree).attr("mrk_preset_path");
+    var current_name = triggeree.textContent;
+    var find_display = triggeree.closest(".mrk_ilist_container");
+    
+    // set name for visual feedback
+    $(find_display).find(".mrk_ilist_active_item_display_p").text(current_name);
+    
+    // set tech data. Path
+    $(find_display).find(".mrk_ilist_active_item_display").attr( "mrk_active_preset_path",current_set_path);
+	
+	console.log("mrk_ilist_entry clicked");
+
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
