@@ -1130,7 +1130,7 @@ a
 /*
 
 ==============================
-Wasted like 3 days on this fucking shit. Who needs it?? Why am I doing it ???
+Wasted like 3 days on this fucking shit. Who needs it?? Why am I doing this ???
 Why do I disrespect myself ???
 
 This is some sort of fucking addiction for me. If I want to do it, then I can't stop until I finish...
@@ -1433,6 +1433,172 @@ Don't fo this to yourself. Don't waste your time.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+===================================================================
+
+	New Super Fancy preset system
+
+===================================================================
+
+*/
+
+
+
+
+.mrk_ilist_active_item_display
+{
+  margin-bottom: 0px;
+  display: flex;
+  
+}
+
+.mrk_ilist_dropdown
+{
+  position: absolute;
+  background: #4b5742;
+  padding: 1px;
+  
+  box-shadow: inset -1px -1px 0px 0px rgba(40,46,34,1), inset 1px 1px 0px 0px rgba(136,145,128,1);
+  margin-top: 1px;
+  
+  z-index: 125;
+}
+
+.mrk_ilist_entry
+{
+  /* 
+    Those padding tops and bottoms are optional.
+    To bring back initial variant - remove tops and bottoms
+    and move height parameter from .mrk_ilist_item_p to here
+  */
+  
+  padding-top: 2px;
+  padding-bottom: 2px;
+  
+  
+  padding-left: 9px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.mrk_ilist_entry:hover
+{
+  background: #958831;
+}
+
+
+
+.mrk_ilist_item_p
+{
+	padding: 0px !important;
+	font-size: inherit !important;
+  height: 17px;
+  margin: 0px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.mrk_ilist_active_item_display_p
+{
+  background: #3e4637;
+  padding: 3px 10px 3px 10px !important;
+  pointer-events: none;
+  user-select: none;
+  
+  box-shadow: inset 1px 1px 0px 0px rgba(40,46,34,1), inset -1px -1px 0px 0px rgba(136,145,128,1);
+  
+  width: 100%;
+  
+  font-size: 19px !important;
+}
+
+.ilist_hidden
+{
+  display: none !important;
+}
+
+
+.other_stuff
+{
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.mtable_line_presets
+{
+	display: flex;
+	padding-left: 0px;
+	justify-content: space-around;
+}
+
+.special_row
+{
+	width: 40%;
+}
+
+.mtable_line_presets button
+{
+	height: 27px;
+}
+
+.mtable_line_presets_buttons
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 10px;
+}
+
+
+.ilist_checkbox_override
+{
+	margin-top: 0px;
+	background: none;
+	box-shadow: none;
+	position: relative;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.ilist_checkbox_override .c_row
+{
+	margin-left: 0px;
+	margin-right: 15px;
+}
+
+
+
+
+
+
+/* fix width of the dropdown */
+
+#dropdown_vmat_file_preset_01a
+{
+	width: 100%;
+	margin-left: 0px;
+}
+
+#dropdown_vmat_file_preset_02a
+{
+	width: 100%;
+	margin-left: 0px;
+}
 
 
 

@@ -1,0 +1,61 @@
+<prefz><udt>
+==========================================================
+
+Yes, this is pretty readable. Don't sroll down.
+
+
+Theme bg: 878787
+Basetexture color: 878787
+Proxy names: 878787
+Proxy parameters: 878787
+$ parameters: 878787
+% parameters: 878787
+Numbers: 878787
+Custom variables / default color: 878787
+Shader fg: 878787
+Shader bg: 878787
+Word proxy: 878787
+Comments: 878787
+Material types: 878787
+Dollar sign / percent sign: 878787
+ [ ] : 878787
+ { } : 878787
+
+
+
+==========================================================
+</udt>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<techdata>
+<theme_bg>878787</theme_bg>
+<btex_col>878787</btex_col>
+<proxy_names>878787</proxy_names>
+<proxy_parameters>878787</proxy_parameters>
+<dol_parameters>878787</dol_parameters>
+<perc_parameters>878787</perc_parameters>
+<numbers>878787</numbers>
+<cvars_def>878787</cvars_def>
+<shader_fg>878787</shader_fg>
+<shader_bg>878787</shader_bg>
+<wproxy>878787</wproxy>
+<mat_types>878787</mat_types>
+<dsign_psign>878787</dsign_psign>
+<sq_bracks>878787</sq_bracks>
+<def_bracks>878787</def_bracks>
+<comments>878787</comments>
+<wat>I told ya no to scroll down ya frick</wat>
+</techdata></prefz>

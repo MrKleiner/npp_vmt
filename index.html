@@ -165,6 +165,818 @@
 				<p>Change the color of specific group and see a real-time preview on the example from the right</p>
 				<!-- <p>The reason this exists is because of how poorly Notepad++ custom languages engine works, so if your theme background is not the same as "Black Board" - the language won't work properly. To fix this you have to enter the background color of your theme into the "Your theme background" field (next to color picker) and then click "Download customized theme". "Vmt config" section is very optional.</p> -->
 				<p></p>
+				
+				
+				<div class="c_pickers_mtable">
+				
+					   <div class="mtable_line mtable_line_presets">
+					   
+					   
+					   
+							<div class="special_row">
+							  
+								
+								
+								<div class="mrk_ilist_container">
+
+								  <div id="preset_ilist_dropdown_01" mrk_active_preset_path="" class="mrk_ilist_active_item_display"><p id="displayer" class="mrk_ilist_active_item_display_p">Black Board</p></div>
+
+								  <div class="mrk_ilist_dropdown">
+									<div mrk_preset_path="presets/debug/discord_preset.npvmat" id="entry1" class="mrk_ilist_entry" onclick="get_preset()"><p class="mrk_ilist_item_p">Discord</p></div>
+									<div mrk_preset_path="presets/debug/youtube_preset.npvmat" id="entry2" class="mrk_ilist_entry" onclick="get_preset()"><p class="mrk_ilist_item_p">YouTube</p></div>
+									<div mrk_preset_path="presets/debug/debug_black_preset.npvmat" id="entry3" class="mrk_ilist_entry" onclick="get_preset()"><p class="mrk_ilist_item_p">Debug Black</p></div>
+									<div mrk_preset_path="presets/debug/debug_default_bboard_preset.npvmat" id="entry4" class="mrk_ilist_entry" onclick="get_preset()"><p class="mrk_ilist_item_p">Black Board</p></div>
+								  </div>
+
+								</div>
+								
+								
+								
+							  </div>
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							<div class="special_row">
+							  
+								
+								
+								<div class="mrk_ilist_container">
+
+								  <div id="preset_ilist_dropdown_02" mrk_active_preset_path="presets/np_themes/blackboard_preset.npvmat" class="mrk_ilist_active_item_display"><p id="displayer" class="mrk_ilist_active_item_display_p">Black Board</p></div>
+
+								  <div class="mrk_ilist_dropdown">
+									<div mrk_preset_path="presets/debug/discord_preset.npvmat" id="entry1" class="mrk_ilist_entry" onclick="get_preset_other_themes()"><p class="mrk_ilist_item_p">Discord</p></div>
+									<div mrk_preset_path="presets/debug/youtube_preset.npvmat" id="entry2" class="mrk_ilist_entry" onclick="get_preset_other_themes()"><p class="mrk_ilist_item_p">YouTube</p></div>
+									<div mrk_preset_path="presets/debug/debug_black_preset.npvmat" id="entry3" class="mrk_ilist_entry" onclick="get_preset_other_themes()"><p class="mrk_ilist_item_p">Debug Black</p></div>
+									<div mrk_preset_path="presets/debug/debug_default_bboard_preset.npvmat" id="entry4" class="mrk_ilist_entry" onclick="get_preset_other_themes()"><p class="mrk_ilist_item_p">Black Board</p></div>
+								  </div>
+
+								</div>
+								
+								
+								
+							  </div>
+							  
+							  
+							  
+							  
+							  
+					   </div>
+					   
+					   
+					   <div class="mtable_line mtable_line_presets">
+					   
+						   <div class="special_row mtable_line_presets_buttons">
+						   
+						   
+						   
+						    <!-- Checkbox -->
+							<div id="dropdownmenu3" class="dropdown_menu mrk_checkbox_group ilist_checkbox_override">
+								
+
+
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div id="ilist_quickread_checkbox_01a" mrk_crow="mrow1" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Quickload</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+							
+							
+							</div>
+							<!-- Checkbox -->
+							
+							
+							
+							   <button class="btn_set_def" onclick="got_preset_now_read_only_bg()">Bg</button>
+							   <button class="btn_set_def" onclick="got_preset_now_read_only_colors()">Colors</button>
+							   <button class="btn_set_def" onclick="got_preset_now_read()">All</button>
+							</div>
+							
+							
+							<div class="special_row mtable_line_presets_buttons">
+							
+						    <!-- Checkbox -->
+							<div id="dropdownmenu3" class="dropdown_menu mrk_checkbox_group ilist_checkbox_override">
+								
+
+
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div id="ilist_quickread_checkbox_02a" mrk_crow="mrow1" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Quickload</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+							
+							
+							</div>
+								<button class="btn_set_def" onclick="got_preset_now_read_only_bg_other_themes()">Bg</button>
+								<button class="btn_set_def" onclick="got_preset_now_read_only_colors_other_themes()">Colors</button>
+								<button class="btn_set_def" onclick="got_preset_now_read_other_themes()">All</button>
+							</div>
+							
+					   </div>
+					   
+					   <div class="mtable_line mtable_line_presets">
+							<div class="special_row mtable_line_presets_buttons">
+								<div id="dropdown_vmat_file_preset_01a" class="load_selector_menu_container">
+  
+  
+							<!--   menu title -->
+								<div id="dropdown1" class="dropdown_menu_descr">Select what to load<div id="fuckyall" class="dropdown_triangle"></div></div>
+							<!--   menu title -->
+							  
+							  
+							<!-- The dropdown menu itself. whole block -->
+								<div id="dropdownmenu1" class="dropdown_menu mrk_checkbox_group hidden_display_none mrk_checkbox_group_is_dropdown">
+								
+
+
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow16" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div id="btex_col_checkmark_load_01a" mrk_crow="mrow16" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Background</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+
+							
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow1" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div id="btex_col_checkmark_load_01a" mrk_crow="mrow1" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Basetexture color</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow2" id="round_checkbox_row2" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow2" id="round_checkbox_row2" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Proxy names</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->    
+
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow3" id="round_checkbox_row3" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow3" id="round_checkbox_row3" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Proxy parameters</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->    
+								
+							 
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow5" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow5" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">$ parameters</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow4" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow4" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">% parameters</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->    
+
+								
+
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow6" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow6" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Numbers</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								  
+							   
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow7" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow7" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Custom variables / default color</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow8" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow8" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Shader fg</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+
+								
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow9" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow9" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Shader bg</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow11" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow11" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Word proxy</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow12" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow12" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Material types</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow13" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow13" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Comments</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow14" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow14" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Dollar sign / percent sign</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow15" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow15" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">[   ]</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow17" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow17" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">{   }</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+							
+							
+								</div>
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							</div>
+							
+							</div>
+							
+							
+							<div class="special_row mtable_line_presets_buttons">
+								<div id="dropdown_vmat_file_preset_02a" class="load_selector_menu_container">
+  
+  
+							<!--   menu title -->
+								<div id="dropdown4" class="dropdown_menu_descr">Select what to load<div id="fuckyall" class="dropdown_triangle"></div></div>
+							<!--   menu title -->
+							  
+							  
+							<!-- The dropdown menu itself. whole block -->
+								<div id="dropdownmenu4" class="dropdown_menu mrk_checkbox_group hidden_display_none mrk_checkbox_group_is_dropdown">
+								
+
+
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow16" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div id="btex_col_checkmark_load_01a" mrk_crow="mrow16" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Background</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+
+							
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow1" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div id="btex_col_checkmark_load_01a" mrk_crow="mrow1" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Basetexture color</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow2" id="round_checkbox_row2" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow2" id="round_checkbox_row2" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Proxy names</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->    
+
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow3" id="round_checkbox_row3" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow3" id="round_checkbox_row3" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Proxy parameters</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->    
+								
+							 
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow5" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow5" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">$ parameters</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->
+
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow4" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow4" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">% parameters</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->    
+
+								
+
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow6" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow6" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Numbers</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								  
+							   
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow7" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow7" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Custom variables / default color</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow8" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow8" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Shader fg</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+
+								
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow9" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow9" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Shader bg</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow11" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow11" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Word proxy</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow12" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow12" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Material types</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow13" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow13" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Comments</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow14" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow14" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">Dollar sign / percent sign</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow15" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow15" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">[   ]</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+								
+								
+								
+							<!-- one dropdown row START -->
+									<div class="set_single_cbox_row_part">
+										<div class="checkbox_part">
+											<div mrk_crow="mrow17" id="round_checkbox_row4" class="checkbox_circular mrk_checkbox_override">
+												<div class="checkbox_inner_round mrk_checkbox_tickmark checkbox_inner_unset"></div>
+											</div>
+										</div>
+								  
+										<div class="c_row list_one mrk_checkbox">
+											<div class="checkbox_body_square">
+												<div mrk_crow="mrow17" id="round_checkbox_row4" class="checkbox_inner_sqare checkbox_set_true mrk_checkbox_tickmark"></div>
+											</div>
+											<p class="cbox_label">{   }</p>
+										</div>
+									</div>
+							<!-- one dropdown row END -->  
+							
+							
+								</div>
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							  
+							</div>
+							
+							</div>
+					   </div>
+					   
+				</div>
+				
+				
+				
+				<p></p>
 				<p id="b_theme_cfg">Base theme config</p>
 				<p class="theme_bg_cont">&nbsp <a>Your theme background</a> &nbsp &nbsp <input type="color" id="theme_bg_picker" value="#0C1021"><a id="killme_quick"> &nbsp #<input type="text" oninput="this.value = this.value.replace(/[^0-9, ^a-z, ^A-Z.]/g, '').replace(/(\..*)\./g, '$1');" id="cd_theme_bg_picker" maxlength = "7" value="0C1021"></a><button class="btn_set_def" onclick="set_def_theme_bg()">Default</button></p>
 				<p></p>
@@ -489,7 +1301,7 @@
 							  
 							  
 							<!-- The dropdown menu itself. whole block -->
-								<div id="dropdownmenu1" class="dropdown_menu mrk_checkbox_group hidden_display_none">
+								<div id="dropdownmenu1" class="dropdown_menu mrk_checkbox_group hidden_display_none mrk_checkbox_group_is_dropdown">
 								
 
 
@@ -861,7 +1673,7 @@
 							  
 							  
 							<!-- The dropdown menu itself. whole block -->
-								<div id="dropdownmenu2" class="dropdown_menu mrk_checkbox_group hidden_display_none">
+								<div id="dropdownmenu2" class="dropdown_menu mrk_checkbox_group hidden_display_none mrk_checkbox_group_is_dropdown">
 								
 
 
@@ -1295,6 +2107,9 @@
 	<script src="./saver2.js"></script>
 	<script src="./vmat_npp_theme_reader.js"></script>
 	<script src="./checkbox_api.js"></script>
+	<script src="./ilist_api.js"></script>
+	<script src="./preset_reader/preset_reader.js"></script>
+	<script src="./preset_reader/preset_reader_other_themes.js"></script>
 	
 
 

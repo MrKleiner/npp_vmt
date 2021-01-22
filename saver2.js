@@ -131,7 +131,7 @@ document.getElementById("dl_to_file_btn").addEventListener("click", function(){
 	+ "\n"
 	+	"<comments>" + document.getElementById("cd_comms_bg_picker").value + "</comments>"
 	+ "\n"
-	+	"<wat>I told ya no to scroll down ya frick</wat>"
+	+	"<wat>I told ya not to scroll down ya frick</wat>"
 	+ "\n"
 	+ "</techdata>"	
 	+ "</prefz>"	
