@@ -1,6 +1,6 @@
 
 	var parser = new DOMParser();
-	var xmlDoc;
+	var xmlDoc_preset_reader;
 	var textarea;
 	// FIX DIFFERENTIAL READER.
 
@@ -18,7 +18,7 @@
 			if (xhr.readyState == XMLHttpRequest.DONE) {
 				myxmlstr = xhr.responseText;				
 				myxmlstresc = myxmlstr.replaceAll('&', 'fuckoff');
-				xmlDoc = parser.parseFromString(myxmlstresc, "text/xml");
+				xmlDoc_preset_reader = parser.parseFromString(myxmlstresc, "text/xml");
 				if ($("#ilist_quickread_checkbox_01a").hasClass("checkbox_set_true"))
 				{
 					got_preset_now_read();
@@ -38,7 +38,7 @@
 		
 		// alert(preset_super_path);
 		
-		// let x = xmlDoc.getElementsByTagName("prefz");
+		// let x = xmlDoc_preset_reader.getElementsByTagName("prefz");
 		
 		// alert(x);
 		
@@ -110,7 +110,7 @@
 	
 function got_preset_now_read()
 {
-	                              var x = xmlDoc.getElementsByTagName("techdata");  
+	                              var x = xmlDoc_preset_reader.getElementsByTagName("techdata");  
                             
                               for (i = 0;i < x.length; i++)  
                               {  
@@ -663,7 +663,7 @@ function got_preset_now_read()
 
 function got_preset_now_read_only_colors()
 {
-	                              var x = xmlDoc.getElementsByTagName("techdata");  
+	                              var x = xmlDoc_preset_reader.getElementsByTagName("techdata");  
                             
                               for (i = 0;i < x.length; i++)  
                               {  
@@ -1179,7 +1179,7 @@ function got_preset_now_read_only_colors()
 
 function got_preset_now_read_only_bg()
 {
-	                              var x = xmlDoc.getElementsByTagName("techdata");  
+	                              var x = xmlDoc_preset_reader.getElementsByTagName("techdata");  
                             
                               for (i = 0;i < x.length; i++)  
                               {  

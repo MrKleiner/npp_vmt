@@ -1,5 +1,5 @@
 	var parser = new DOMParser();
-	var xmlDoc;
+	var xmlDoc_gen;
 	var textarea;
 
 	function bodyready()
@@ -10,11 +10,18 @@
 			if (xhr.readyState == XMLHttpRequest.DONE) {
 				myxmlstr = xhr.responseText;				
 				myxmlstresc = myxmlstr.replaceAll('&', 'fuckoff');
-				xmlDoc = parser.parseFromString(myxmlstresc, "text/xml");
+				xmlDoc_gen = parser.parseFromString(myxmlstresc, "text/xml");
 			}
 		}
-		xhr.open('GET', 'xml/new/light/vmt-test.xml', true);
+		
+		// RENAMING TO NPVMAT WORKS !!!!
+		
+		let super_path_unique = "xml/new/light/vmt-test.xml";
+		
+		xhr.open('GET', super_path_unique, true);
 		xhr.send(null);
+		
+		
 	}
 
 
@@ -87,7 +94,7 @@
 		// let oneMoreColorPicked = document.getElementById("oneMoreColorPicker").value.substring(1);
 		
 		
-		let x = xmlDoc.getElementsByTagName("WordsStyle");
+		let x = xmlDoc_gen.getElementsByTagName("WordsStyle");
 		
 		for (i = 0; i < x.length ;i++) 
 		{
@@ -95,7 +102,7 @@
 			switch (nameAttr) {
 				
 			  case 'DEFAULT':
-				x[i].setAttribute('fgColor', cvars_c_picker);
+				x[i].setAttribute('fgColor', "A2A2A2");
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				x[i].setAttribute('fontName', "");
 				break;
@@ -291,7 +298,7 @@
 		
 		
 		
-		var str = s.serializeToString(xmlDoc).replaceAll('fuckoff', '&');
+		var str = s.serializeToString(xmlDoc_gen).replaceAll('fuckoff', '&');
 		download(filename, str);
 	}
 	
