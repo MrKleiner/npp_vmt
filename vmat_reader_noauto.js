@@ -66,6 +66,8 @@ var wannadie;
 								 
 								 comments_load = x[i].getElementsByTagName("comments")[0].childNodes[0].nodeValue;
 								 
+								 bare_text_load = x[i].getElementsByTagName("bare_text")[0].childNodes[0].nodeValue;
+								 
 								 
 								 
 								 
@@ -102,6 +104,8 @@ var wannadie;
 								 def_bracks_defcomp = "00ff40";
 								 
 								 comments_defcomp = "f5c48b";
+								 
+								 bare_text_default = "A2A2A2";
 								 
 
 								 
@@ -150,7 +154,9 @@ var wannadie;
 							  
 							  var sq_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow15\"]");
 							  
-							  var def_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow17\"]");							  
+							  var def_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow17\"]");
+
+							  var bare_text_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow18\"]");							  
 							  
 							  
 							  
@@ -211,6 +217,31 @@ var wannadie;
 							  }}
 							  
 							  
+							  
+							  
+							  // bare text
+							  
+							  if(bare_text_cbox[1].classList.contains('cbox_set_false_override'))
+							  {
+								  // console.log("no_override");
+							  }
+							  else
+							  {
+								  // console.log("is_it_set");
+								if(bare_text_cbox[1].classList.contains('checkbox_set_true'))
+							  {
+							  // if (btex_col_load != btex_col_defcomp)
+							  // {
+								// btex_col
+                            
+								// c input
+								document.getElementById("bare_text_c_picker").value = "#" + bare_text_load;
+								// t input
+								document.getElementById("cd_bare_text_picker").value = bare_text_load;
+								// v feedb
+								$(".defgray").css('color', "#" +  bare_text_load);							
+							  // }
+							  }}
 							  
 							  
 							  

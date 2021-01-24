@@ -51,6 +51,9 @@ document.getElementById("dl_to_file_btn").addEventListener("click", function(){
 	+ "Custom variables / default color: "
 	+ document.getElementById("cd_cvars_w_def_picker").value
 	+ "\n"
+	+ "Bare text: "
+	+ document.getElementById("cd_bare_text_picker").value
+	+ "\n"
 	+ "Shader fg: "
 	+ document.getElementById("cd_shader_picker").value
 	+ "\n"
@@ -130,6 +133,8 @@ document.getElementById("dl_to_file_btn").addEventListener("click", function(){
 	+	"<def_bracks>" + document.getElementById("cd_defb_bg_picker").value + "</def_bracks>"
 	+ "\n"
 	+	"<comments>" + document.getElementById("cd_comms_bg_picker").value + "</comments>"
+	+ "\n"
+	+	"<bare_text>" + document.getElementById("cd_bare_text_picker").value + "</bare_text>"
 	+ "\n"
 	+	"<wat>I told ya not to scroll down ya frick</wat>"
 	+ "\n"

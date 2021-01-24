@@ -14,8 +14,10 @@ function set_def_all()
 	set_def_pr_params(); 
 	set_def_pr_names();
 	set_def_btexture();
-	set_def_comments()
+	set_def_comments();
+	bare_text_set_def();
 	// set_def_theme_bg();
+	
 }
 
 function set_def_all_and_bg()
@@ -34,8 +36,9 @@ function set_def_all_and_bg()
 	set_def_pr_params(); 
 	set_def_pr_names();
 	set_def_btexture();
-	set_def_comments()
+	set_def_comments();
 	set_def_theme_bg();
+	bare_text_set_def();
 }
 
 // bg cfg 
@@ -184,7 +187,13 @@ $("#comms_c_picker").change(function(){
 });
 
 
-
+// defgray
+$("#bare_text_c_picker").change(function(){
+  $(".defgray").css('color', $(this).val());
+   // 1 - text input 2 - color input
+  document.getElementById("cd_bare_text_picker").value = document.getElementById("bare_text_c_picker").value.substring(1);  
+  
+});
 
 
 
@@ -442,6 +451,16 @@ $("#cd_comms_bg_picker").change(function(){
 
 
 
+
+// defgray
+
+// from text inp to col inp. 1 - text input
+$("#cd_bare_text_picker").change(function(){
+	// 2 - set vis feedback col
+  $(".defgray").css('color', "#" + $(this).val());
+	// 3 - from text input to col input. 1 - col inp 2 - text inp
+  document.getElementById("bare_text_c_picker").value = "#" + document.getElementById("cd_bare_text_picker").value;
+});
 
 
 
@@ -736,6 +755,17 @@ function set_def_comments()
 }
 
 
+function bare_text_set_def() 
+{
+	// def val to set
+	set_def_dol_params.value = "A2A2A2";
+	// col input
+	document.getElementById("bare_text_c_picker").value = "#" + set_def_dol_params.value;
+	// text input
+	document.getElementById("cd_bare_text_picker").value = set_def_dol_params.value;
+	// vis feedb
+	$(".defgray").css('color', "#" +  set_def_dol_params.value);
+}
 
 
 

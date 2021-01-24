@@ -61,7 +61,7 @@ var wannadie5;
 										break;	
 
 									  case 'DEFAULT':
-										cvars_def_load = x[i].getAttribute('fgColor');
+										bare_text_load = x[i].getAttribute('fgColor');
 										break;	
 
 									  case 'KEYWORDS3':
@@ -85,8 +85,11 @@ var wannadie5;
 										sq_bracks_load = x[i].getAttribute('fgColor');
 										break;	
 
+
+
+
 									  case 'DELIMITERS3':
-										def_bracks_load = x[i].getAttribute('fgColor');
+										cvars_def_load = x[i].getAttribute('fgColor');
 										break;	
 
 
@@ -129,6 +132,8 @@ var wannadie5;
 								 def_bracks_defcomp = "00ff40";
 								 
 								 comments_defcomp = "f5c48b";
+								 
+								 bare_text_default = "A2A2A2";
 								 
 
 								 
@@ -176,7 +181,9 @@ var wannadie5;
 							  
 							  var sq_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow15\"]");
 							  
-							  var def_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow17\"]");							  
+							  var def_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow17\"]");		
+
+								var bare_text_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow18\"]");
 							  
 							  
 							  
@@ -240,6 +247,40 @@ var wannadie5;
 							  
 							  
 							  
+							  
+							  // bare text
+
+							  if(bare_text_cbox[1].classList.contains('cbox_set_false_override'))
+							  {
+								  // console.log("no_override");
+							  }
+							  else
+							  {
+								  // console.log("is_it_set");
+								if(bare_text_cbox[1].classList.contains('checkbox_set_true'))
+							  {
+
+							  // if (btex_col_load != btex_col_defcomp)
+							  // {
+								// btex_col
+                            
+								// c input
+								document.getElementById("bare_text_c_picker").value = "#" + bare_text_load;
+								// t input
+								document.getElementById("cd_bare_text_picker").value = bare_text_load;
+								// v feedb
+								$(".defgray").css('color', "#" + bare_text_load);
+							  // }
+							  }}
+
+
+
+
+
+
+
+
+
 							  
 							  if(prox_names[1].classList.contains('cbox_set_false_override'))
 							  {
@@ -586,13 +627,15 @@ var wannadie5;
 								// if (def_bracks_load != def_bracks_defcomp)
 								// {		
 								// Def bracks
-								document.getElementById("def_bracks_c_picker").value = "#" + def_bracks_load;
+								document.getElementById("def_bracks_c_picker").value = "#" + cvars_def_load;
 								// text input
-								document.getElementById("cd_defb_bg_picker").value = def_bracks_load;
+								document.getElementById("cd_defb_bg_picker").value = cvars_def_load;
 								// vis feedb
-								$(".def_brackets_open").css('color', "#" +  def_bracks_load);
+								$(".def_brackets_open").css('color', "#" +  cvars_def_load);
 								
-								$(".def_brackets_close").css('color', "#" +  def_bracks_load);
+								$(".def_brackets_close").css('color', "#" +  cvars_def_load);
+								
+								$(".noname_cvars").css('color', "#" +  cvars_def_load);
 								// }
 								}}
 	

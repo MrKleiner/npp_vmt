@@ -1,16 +1,15 @@
 // I literally have 0 fucking idea wtf is this. I was just copypasting the shit.
 //
-// If u see this, then you don't even know how happy I am knowing that someby needs that shit.
-// Please, message me on Discord: Mr.Kleiner#4600 I'm gonna be sp happy :D
+
+
+
+
 var wannadie2;
 
         $(function () {
             $("#vmat_diff_only").bind("click", function () {
                 var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xml)$/;
-                // if (regex.test($("#fileUpload").val().toLowerCase())) 
-				// {
-                    // if (typeof (FileReader) != "undefined") 
-                        // {
+				
                           var reader = new FileReader();
                           reader.onload = function (e) 
                         {
@@ -66,7 +65,7 @@ var wannadie2;
 								 
 								 comments_load = x[i].getElementsByTagName("comments")[0].childNodes[0].nodeValue;
 								 
-								 
+								 bare_text_load = x[i].getElementsByTagName("bare_text")[0].childNodes[0].nodeValue;
 								 
 								 
 								 //defaults
@@ -103,7 +102,7 @@ var wannadie2;
 								 
 								 comments_defcomp = "f5c48b";
 								 
-
+								 bare_text_default = "A2A2A2";
 								 
 								 
 								 
@@ -160,6 +159,8 @@ var wannadie2;
 							  var sq_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow15\"]");
 							  
 							  var def_bracks_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow17\"]");
+							  
+							  var bare_text_cbox = $(global_dropdown_id).find("[mrk_crow=\"mrow18\"]");
 							  
 							  
 
@@ -221,6 +222,35 @@ var wannadie2;
 							  }
 								}
 							  }
+
+
+							// bare text
+
+							  if(bare_text_cbox[1].classList.contains('cbox_set_false_override'))
+							  {
+								  // console.log("no_override");
+							  }
+							  else
+							  {
+								  // console.log("is_it_set");
+								if(bare_text_cbox[1].classList.contains('checkbox_set_true'))
+							  {
+
+							  if (bare_text_load != bare_text_default)
+							  {
+								// btex_col
+                            
+								// c input
+								document.getElementById("bare_text_c_picker").value = "#" + bare_text_load;
+								// t input
+								document.getElementById("cd_bare_text_picker").value = bare_text_load;
+								// v feedb
+								$(".defgray").css('color', "#" +  bare_text_load);							
+							  }
+								}
+							  }
+
+
 
 
 
@@ -577,14 +607,6 @@ var wannadie2;
              
                         }
                         reader.readAsText($("#fileUpload")[0].files[0]);
-                    // } else {
-                        // alert("This browser does not support HTML5. Wtf r u using? Netscape?");
-                    // }
-                // } 
-				// else 
-				// {
-                    // alert("Please upload a valid .vmat file. You can open the file as the text file and copy the values by hand. Sorry");
-                // }
             });
         });
 

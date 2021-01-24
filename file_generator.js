@@ -82,7 +82,8 @@
 		// comments
 		let comms_c_picker = document.getElementById("cd_comms_bg_picker").value;
 		
-
+		// default gray
+		let def_bare_test_c_picker = document.getElementById("cd_bare_text_picker").value;
 
 
 
@@ -102,7 +103,7 @@
 			switch (nameAttr) {
 				
 			  case 'DEFAULT':
-				x[i].setAttribute('fgColor', "A2A2A2");
+				x[i].setAttribute('fgColor', def_bare_test_c_picker);
 				x[i].setAttribute('bgColor', theme_bg_picker);
 				x[i].setAttribute('fontName', "");
 				break;
