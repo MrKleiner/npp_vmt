@@ -758,7 +758,7 @@ function set_def_comments()
 function bare_text_set_def() 
 {
 	// def val to set
-	set_def_dol_params.value = "A2A2A2";
+	set_def_dol_params.value = "a2a2a2";
 	// col input
 	document.getElementById("bare_text_c_picker").value = "#" + set_def_dol_params.value;
 	// text input

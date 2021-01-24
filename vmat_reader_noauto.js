@@ -105,7 +105,7 @@ var wannadie;
 								 
 								 comments_defcomp = "f5c48b";
 								 
-								 bare_text_default = "A2A2A2";
+								 bare_text_default = "a2a2a2";
 								 
 
 								 
