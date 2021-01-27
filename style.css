@@ -1033,6 +1033,23 @@ a
 	{
 		width: 69% !important;
 	}
+	
+	#upload_vmat
+	{
+		width: 100%;
+	}
+	
+	#vmat_diff_only
+	{
+		width: 100%;
+	}
+	
+	#dl_to_file_btn
+	{
+		width: 100%;
+	}
+	
+	
 }
 
 .safety_margin
