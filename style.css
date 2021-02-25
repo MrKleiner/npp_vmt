@@ -1637,11 +1637,32 @@ Don't fo this to yourself. Don't waste your time.
 
 
 
+@media (max-width: 1803px)
+{
+	#width_fix .btn_set_def
+	{
+		/* display: border-box; */
+		margin-right: 0px !important;
+		padding: 0px 0.3vw 0px 0.3vw;
+	}
+	
+	#width_fix .special_row
+	{
+		display: flex;
+		justify-content: space-between;
+		/* align-items: flex-end; */
+	}
+}
 
 
 
-
-
+/* @media (max-width: 1370px) */
+/* { */
+	/* #width_fix .btn_set_def */
+	/* { */
+		/* padding: 0px 0px 0px 0px; */
+	/* } */
+/* } */
 
 
 
