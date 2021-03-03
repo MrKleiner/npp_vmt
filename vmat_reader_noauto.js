@@ -1,7 +1,5 @@
 // I literally have 0 fucking idea wtf is this. I was just copypasting the shit.
-//
-// If u see this, then you don't even know how happy I am knowing that someby needs that shit.
-// Please, message me on Discord: Mr.Kleiner#4600 I'm gonna be sp happy :D
+
 var wannadie;
 
         $(function () {
