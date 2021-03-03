@@ -1031,7 +1031,7 @@ a
 	
 	.dropdown_menu_descr
 	{
-		width: 69% !important;
+		width: auto;
 	}
 	
 	#upload_vmat
@@ -1636,6 +1636,53 @@ Don't fo this to yourself. Don't waste your time.
 }
 
 
+@media (max-width: 1490px) 
+{
+  .into_text_root 
+  {
+	  /* background: red; */
+    margin-left: 20px;
+  }
+  
+  	#reset_all
+	{
+		width: 100%;
+	}
+	
+	#sets_dl
+	{
+		width: 100%;
+	}
+	
+	.save_to_file
+	{
+		width: 100%;
+	}
+	
+	.dropdown_menu_descr
+	{
+		width: auto;
+	}
+	
+	#upload_vmat
+	{
+		width: 100%;
+	}
+	
+	#vmat_diff_only
+	{
+		width: 100%;
+	}
+	
+	#dl_to_file_btn
+	{
+		width: 100%;
+	}
+	
+	
+}
+
+
 
 @media (max-width: 1803px)
 {
@@ -1652,17 +1699,45 @@ Don't fo this to yourself. Don't waste your time.
 		justify-content: space-between;
 		/* align-items: flex-end; */
 	}
+	
+	.c_pickers_mtable .mrk_ilist_active_item_display_p
+	{
+		font-size: 1.25vw !important;
+	}
+}
+
+@media (max-width: 1870px)
+{
+	.dropdown_menu_descr
+	{
+		width: 80%;
+	}
 }
 
 
-
-/* @media (max-width: 1370px) */
-/* { */
-	/* #width_fix .btn_set_def */
-	/* { */
-		/* padding: 0px 0px 0px 0px; */
-	/* } */
-/* } */
+@media (max-width: 1240px)
+{
+	#width_fix .special_row
+	{
+		display: flex;
+		flex-direction: column;
+		/* justify-content: center; */
+		align-items: center;
+	}
+	
+	#width_fix .btn_set_def
+	{
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	
+	.dropdown_menu_descr
+	{
+		width: auto;
+		font-size: 1.25vw;
+	}
+}
 
 
 
