@@ -21,6 +21,12 @@ $(document).ready(function(){
 		
 	$(this).siblings(".mrk_checkbox_group_is_dropdown").toggleClass("hidden_display_none");
     $("#dropdown_master").toggleClass("dropdown_menu_resetter_hidden");
+	
+	
+	
+	// manage other dropdowns
+	
+	
  
   });
 });
@@ -94,13 +100,100 @@ $(document).ready(function(){
        
        
        // remove death tag
-       $(current_container).find("[mrk_crow=\"" + current_row_row + "\"]").removeClass("checkbox_inner_unset");
-       // now make set state to true
+       // $(current_container).find("[mrk_crow=\"" + current_row_row + "\"]").removeClass("checkbox_inner_unset");
+	   
+       // now make set state to true. QUITE IRRITATING SOMETIMES. UNCOMMENT 2 ROWS BELOW TO BRING THIS FEATURE BACK
        $(current_container).find("[mrk_crow=\"" + current_row_row + "\"]").addClass("checkbox_set_true");
        
        
-
  
      }
   });
 });
+
+
+
+
+ // Additional controls
+
+
+
+
+$(document).ready(function(){
+  $(".cbox_btn_ctrl_set_none").click(function(){
+	  
+	  
+	var current_container = this.closest(".mrk_checkbox_group");
+	  
+	  
+	  
+	// $(current_container).find(".mrk_checkbox").removeClass("cbox_blocked");
+	  
+	  
+	$(current_container).find(".mrk_checkbox_tickmark").removeClass("checkbox_inner_unset");
+	
+	$(current_container).find(".mrk_checkbox_tickmark").removeClass("checkbox_set_true");
+	  
+	$(current_container).find(".mrk_checkbox_tickmark").addClass("checkbox_inner_unset");
+	  
+	// cbox_set_false_override
+	$(current_container).find(".mrk_checkbox_tickmark").removeClass("cbox_set_false_override");
+	  
+	// $(this).find(".mrk_checkbox_tickmark").toggleClass("checkbox_inner_unset");
+    // $(this).find(".mrk_checkbox_tickmark").toggleClass("checkbox_set_true");
+	  
+	  
+    // $(".mrk_checkbox_group_is_dropdown").addClass("hidden_display_none");
+    // $("#dropdown_master").addClass("dropdown_menu_resetter_hidden");
+	
+	
+	// remove block
+	$(current_container).find(".mrk_checkbox").removeClass("cbox_blocked"); 
+ 
+	$(current_container).find(".mrk_checkbox_override").removeClass("cbox_blocked"); 
+ 
+  });
+});
+
+
+$(document).ready(function(){
+  $(".cbox_btn_ctrl_set_all").click(function(){
+	  
+	var current_container = this.closest(".mrk_checkbox_group");
+	  
+	  
+	$(current_container).find(".mrk_checkbox_tickmark").removeClass("checkbox_inner_unset");
+	
+	$(current_container).find(".mrk_checkbox_tickmark").removeClass("checkbox_set_true");
+	  
+	$(current_container).find(".mrk_checkbox_tickmark").addClass("checkbox_set_true");
+	
+	// cbox_set_false_override
+	$(current_container).find(".mrk_checkbox_tickmark").removeClass("cbox_set_false_override");
+	
+	// fix circular
+	$(current_container).find(".checkbox_inner_round").removeClass("checkbox_set_true");
+	  
+	$(current_container).find(".checkbox_inner_round").addClass("checkbox_inner_unset");
+	
+	// remove block
+	// mrk_checkbox_override
+	$(current_container).find(".mrk_checkbox").removeClass("cbox_blocked"); 
+ 
+	$(current_container).find(".mrk_checkbox_override").removeClass("cbox_blocked"); 
+	
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

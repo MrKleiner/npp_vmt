@@ -1840,3 +1840,66 @@ Don't fo this to yourself. Don't waste your time.
 
 
 
+
+
+/* =================================== */
+
+
+/* Add more control to the checkboxes */
+
+
+/* =================================== */
+
+
+
+.cbox_btn_ctrl
+{
+	display: flex;
+	justify-content: space-around;
+	padding: 15px 0px 10px 0px;
+}
+
+
+.cbox_btn_ctrl .btn_set_def
+{
+	margin: 0px;
+	height: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
