@@ -1,0 +1,63 @@
+<prefz><udt>
+==========================================================
+
+Yes, this is pretty readable. Don't sroll down.
+
+
+Theme bg: 282C34
+Basetexture color: 80a9ff
+Proxy names: E46972
+Proxy parameters: 56b6c2
+$ parameters: 56b6c2
+% parameters: d966ff
+Numbers: c8a6ff
+Custom variables / default color: e3e7f0
+Bare text: a2a2a2
+Shader fg: 63fa6f
+Shader bg: 000000
+Word proxy: e5c07b
+Comments: 646C7C
+Material types: 7d81ff
+Dollar sign / percent sign: a4ffad
+ [ ] : ffffff
+ { } : 00ff40
+
+
+
+==========================================================
+</udt>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<techdata>
+<theme_bg>282C34</theme_bg>
+<btex_col>80a9ff</btex_col>
+<proxy_names>E46972</proxy_names>
+<proxy_parameters>56b6c2</proxy_parameters>
+<dol_parameters>56b6c2</dol_parameters>
+<perc_parameters>d966ff</perc_parameters>
+<numbers>c8a6ff</numbers>
+<cvars_def>e3e7f0</cvars_def>
+<shader_fg>63fa6f</shader_fg>
+<shader_bg>000000</shader_bg>
+<wproxy>e5c07b</wproxy>
+<mat_types>7d81ff</mat_types>
+<dsign_psign>a4ffad</dsign_psign>
+<sq_bracks>ffffff</sq_bracks>
+<def_bracks>00ff40</def_bracks>
+<comments>646C7C</comments>
+<bare_text>a2a2a2</bare_text>
+<wat>I told ya not to scroll down ya frick</wat>
+</techdata></prefz>
