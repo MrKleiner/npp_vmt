@@ -1442,7 +1442,7 @@ Don't fo this to yourself. Don't waste your time.
 	width: 100%;
 	height: 100%;
 	background: none;
-	/* z-index: 50; */
+	z-index: 50;
 }
 
 

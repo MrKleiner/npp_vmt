@@ -20,7 +20,7 @@ $(document).ready(function(){
 		
 		
 	$(this).siblings(".mrk_checkbox_group_is_dropdown").toggleClass("hidden_display_none");
-    $("#dropdown_master").removeClass("dropdown_menu_resetter_hidden");
+    $("#dropdown_master").toggleClass("dropdown_menu_resetter_hidden");
  
   });
 });
