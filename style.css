@@ -1749,3 +1749,94 @@ Don't fo this to yourself. Don't waste your time.
 
 
 
+
+
+
+
+ /* but what if subpanels ? */
+
+
+.mrk_ilist_entry_sub
+{
+  /* 
+    Those padding tops and bottoms are optional.
+    To bring back initial variant - remove tops and bottoms
+    and move height parameter from .mrk_ilist_item_p to here
+  */
+  
+  padding-top: 2px;
+  padding-bottom: 2px;
+  
+  
+  padding-left: 9px;
+  /* padding-right: 40px; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+ 
+}
+.mrk_ilist_entry_sub > .mrk_ilist_item_p
+{
+	
+	/* ================ ATTENTION ALL GAMERS ================*/
+	
+	
+	/* This is bad, but more performance efficient.  */
+	/* For proper implementation -  */
+	/* add a special class to the subpanel p to add 40px margin exclusively to it */
+	margin-right: 40px;
+}
+
+
+.mrk_ilist_entry_sub .mrk_ilist_dropdown
+{
+	 left: 100%;
+	 position: absolute;
+}
+
+.mrk_ilist_entry_sub:hover
+{
+  background: #958831;
+}
+
+
+.mrk_ilist_subpanel
+{
+	top: 0px;
+	margin-top: 0px;
+	display: none;
+}
+
+
+.mrk_ilist_entry_sub:hover > .mrk_ilist_subpanel
+{
+  /* background: #958831; */
+  display: initial !important;
+}
+
+.mrk_ilist_entry_sub .mrk_ilist_subpanel
+{
+	width: max-content;
+}
+
+
+.subpanel_triangle
+{
+	transform: rotate(-90deg);
+  height: 10px;
+  width: 10px;
+  /* background: red; */
+  
+  background-image: url('pics/triangle_green.svg');
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  
+  
+}
+
+
+
+
