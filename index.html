@@ -75,8 +75,8 @@
 			<!-- new one -->			
 			<div class="version_sep_new">
 			
-			<p>1 - <a class="dl_new" rdate="Last update: 25-01-2020" download href="xml/new/light/vmt-test.xml" title="Last update: 25-01-2020">vmt-test.xml</a> - This is for highlighting.</p>
-			<p>2 - <a class="dl_new" download href="xml/new/auto/vmt-test.xml" title="Last update: 25-01-2020">vmt-test.xml</a> - And this is for autocomplete.</p>
+			<p>1 - <a class="dl_new" rdate="Last update: 25-01-2020" download href="xml/new/light/vmt-test.xml" title="Last update: 03-05-2021">vmt-test.xml</a> - This is for highlighting.</p>
+			<p>2 - <a class="dl_new" download href="xml/new/auto/vmt-test.xml" title="Last update: 03-05-2021">vmt-test.xml</a> - And this is for autocomplete.</p>
 			
 			</div>			
 			<!-- new one -->
@@ -89,9 +89,12 @@
 			
 			<!-- old one -->
 			<div class="version_sep_old">
-			
-			<p>1 - <a class="dl_old" download href="xml/old/light/vmt-test.xml" title="Last update: 27-11-2020">vmt-test.xml</a> - This is for highlighting.</p>
-			<p>2 - <a class="dl_old" download href="xml/old/auto/vmt-test.xml" title="Last update: 27-11-2020">vmt-test.xml</a> - And this is for autocomplete.</p>
+				<div>
+					<p><a class="dl_old dl_old_show" href="#" onclick="return false;">Show the old broken version</a></p>
+					<p><a class="dl_old dl_old_show" style="opacity: 0;"> &nbsp </a></p>
+				</div>
+				<p class="hidden_display_none dl_old_hidden">1 - <a class="dl_old" download href="xml/old/light/vmt-test.xml" title="Last update: 27-11-2020">vmt-test.xml</a> - This is for highlighting.</p>
+				<p class="hidden_display_none dl_old_hidden">2 - <a class="dl_old" download href="xml/old/auto/vmt-test.xml" title="Last update: 27-11-2020">vmt-test.xml</a> - And this is for autocomplete.</p>
 			
 			</div>
 			<!-- old one -->
@@ -214,7 +217,7 @@
 									<div class="ilist_hidden mrk_ilist_function_storage" onclick="get_preset_other_themes()"></div>
 								  <div class="mrk_ilist_dropdown ilist_hidden">
 									<div mrk_preset_path="presets/debug/discord_preset.npvmat" id="entry11" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Discord</p></div>
-									<div mrk_preset_path="presets/monokai.npvmat" id="entry11" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Monokai</p></div>
+									<!-- <div mrk_preset_path="presets/monokai.npvmat" id="entry11" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Monokai</p></div> -->
 									<div mrk_preset_path="presets/sublime_text.npvmat" id="entry11" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Sublime Text</p></div>
 									<div mrk_preset_path="presets/debug/youtube_preset.npvmat" id="entry22" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">YouTube</p></div>
 									<!-- <div mrk_preset_path="presets/debug/debug_black_preset.npvmat" id="entry33" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Debug Black</p></div> -->
@@ -224,6 +227,8 @@
 										<div class="subpanel_triangle"></div>
 										<div class="mrk_ilist_dropdown mrk_ilist_subpanel">
 											<div mrk_preset_path="presets/photoshop_2017.npvmat" id="entry44" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Photoshop 2017</p></div>
+											<div mrk_preset_path="presets/photoshop_test.npvmat" id="entry44" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Photoshop test</p></div>
+											<div mrk_preset_path="presets/monokai.npvmat" id="entry11" class="mrk_ilist_entry"><p class="mrk_ilist_item_p">Monokai</p></div>
 										</div>										
 
 									</div>
@@ -2259,6 +2264,7 @@
 	<script src="./ilist_api.js"></script>
 	<script src="./preset_reader/preset_reader.js"></script>
 	<script src="./preset_reader/preset_reader_other_themes.js"></script>
+	<script src="./shorties.js"></script>
 	
 
 
