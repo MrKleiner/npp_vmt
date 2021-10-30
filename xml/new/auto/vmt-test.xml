@@ -67,9 +67,7 @@
 <KeyWord name="basealphaphongmask" />
 <KeyWord name="basealphaselfillummask" />
 <KeyWord name="basemapalphaenvmapmask" />
-<KeyWord name="basemapalphaenvmask" />
 <KeyWord name="basemapalphaphongmask" />
-<KeyWord name="basemapalphphongmask" />
 <KeyWord name="basemapluminancephongmask" />
 <KeyWord name="basenormalmap" />
 <KeyWord name="basephongboost" />
