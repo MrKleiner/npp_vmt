@@ -7,7 +7,7 @@ VMT_DIR = THISDIR / 'vmt_files'
 
 OUT_DOLLAR = THISDIR / 'output' / 'dollar'
 
-
+WEB_DL_DATA = THISDIR.parent / 'docs' / 'dl_data'
 
 def _extract_prefixed_params(tgt_bytes, prefix=b'$'):
 	tgt_bytes = tgt_bytes.lower()
@@ -59,6 +59,8 @@ class VMTComposition:
 
 		self._params = None
 
+		self.name = self.comp_path.name
+
 	def read_comp(self):
 		buf = io.BytesIO(
 			self.comp_path.read_bytes()
@@ -80,7 +82,10 @@ class VMTComposition:
 
 		for fname_s, data_s in size_array:
 			self._files.append(
-				(buf.read(fname_s).decode(), buf.read(data_s))
+				(
+					buf.read(fname_s).decode(),
+					buf.read(data_s)
+				)
 			)
 
 		return self._files
@@ -129,24 +134,27 @@ class VMTComposition:
 class VMTGroups:
 	def __init__(self, groups_dir):
 		self.groups_dir = Path(groups_dir)
-		self.groups = None
+		self._groups = None
+
+	@property
+	def groups(self):
+		if self._groups:
+			return self._groups
+		
+		self.index_groups()
+
+		return self._groups
 
 	def index_groups(self):
-		self.groups = {}
+		self._groups = {}
 
 		for comp_file in self.groups_dir.glob('*.comp'):
-			self.groups[comp_file.stem] = VMTComposition(comp_file)
+			self._groups[comp_file.stem] = VMTComposition(comp_file)
 
 	def __getitem__(self, key):
-		if not self.groups:
-			self.index_groups()
-
 		return self.groups.get(key)
 
 	def composite(self, blacklist=None):
-		if not self.groups:
-			self.index_groups()
-
 		blacklist = blacklist or ()
 
 		dollar_list = set()
@@ -165,25 +173,57 @@ class VMTGroups:
 
 		return dollar_list, percent_list
 
+	def __iter__(self):
+		for grpname, grpdata in self.groups.items():
+			yield grpname, grpdata
+
+
+class WordList:
+	def __init__(self, tgt_file):
+		self.tgt_file = Path(tgt_file)
+		self._word_list = None
+
+	@property
+	def word_list(self):
+		if self._word_list != None:
+			return self._word_list
+
+		wlist = list(map(
+			lambda i: i.strip(),
+			self.tgt_file.read_bytes().split(b'\n')
+		))
+		self._word_list = list(filter(
+			lambda i: (not b'#' in i) and i,
+			wlist
+		))
+
+		return self._word_list
+
+	def __contains__(self, item):
+		return item in self.word_list
+
+	def __iter__(self):
+		for i in self.word_list:
+			yield i
+
+	def __radd__(self, item):
+		return item + self.word_list
+
+
+
+
+def create_write_target(tgt_path):
+	tgt_path = Path(tgt_path)
+	tgt_path.parent.mkdir(parents=True, exist_ok=True)
+	tgt_path.write_bytes(b'')
+	return tgt_path
 
 
 def main():
-	dlr_comp_path = OUT_DOLLAR / 'dollar_composite.dparams'
-	dlr_comp_path.parent.mkdir(parents=True, exist_ok=True)
-	dlr_comp_path.write_bytes(b'')
+	dlr_comp_path = create_write_target(OUT_DOLLAR / 'dollar_composite.dparams')
+	perc_comp_path = create_write_target(OUT_DOLLAR / 'percent_composite.dparams')
 
-	perc_comp_path = OUT_DOLLAR / 'percent_composite.dparams'
-	perc_comp_path.parent.mkdir(parents=True, exist_ok=True)
-	perc_comp_path.write_bytes(b'')
-
-	blacklist = list(map(
-		lambda i: i.strip(),
-		(THISDIR / 'blacklist.bl').read_bytes().split(b'\n')
-	))
-	blacklist = list(filter(
-		lambda i: not b'#' in i,
-		blacklist
-	))
+	blacklist = WordList(THISDIR / 'blacklist.bl')
 
 	groups = VMTGroups(VMT_DIR)
 
@@ -192,7 +232,124 @@ def main():
 	dlr_comp_path.write_bytes(b'\n'.join(dollar_params))
 	perc_comp_path.write_bytes(b'\n'.join(percent_params))
 
+	extra_dollar =       WordList(WEB_DL_DATA / 'extra' / 'extra_dollar.wr')
+	extra_perc =         WordList(WEB_DL_DATA / 'extra' / 'extra_perc.wr')
+	extra_autocomp =     WordList(WEB_DL_DATA / 'extra' / 'extra_autocomplete.wr')
+	extra_shaders =      WordList(WEB_DL_DATA / 'extra' / 'shaders.wr')
+	extra_surfaceprops = WordList(WEB_DL_DATA / 'extra' / 'surfaceprops.wr')
+	proxy_kw =           WordList(WEB_DL_DATA / 'extra' / 'proxy_kw.wr')
+	proxy_names =        WordList(WEB_DL_DATA / 'extra' / 'proxy_names.wr')
 
+	autocomp_data = set()
+	autocomp_data.update(
+		dollar_params,
+		percent_params,
+		extra_dollar,
+		extra_perc,
+		extra_autocomp,
+		extra_shaders,
+		extra_surfaceprops
+	)
+
+	autocomp_data = list(autocomp_data)
+	autocomp_data.sort()
+
+	autocomp_file_path = create_write_target(WEB_DL_DATA / 'npp' / 'vmt_mrk.xml')
+
+	# for test in (extra_dollar, extra_perc, extra_autocomp, extra_shaders, extra_surfaceprops):
+	# 	for sex in test:
+	# 		print(f'>{sex}<')
+
+	with open(autocomp_file_path, 'ab') as autocomp_file:
+		autocomp_file.write(b'<?xml version="1.0" encoding="Windows-1252" ?>\n')
+		autocomp_file.write(b'<NotepadPlus>\n')
+		autocomp_file.write(b'\t<AutoComplete>\n')
+
+		for entry in autocomp_data:
+			autocomp_file.write(b'\t\t<KeyWord name="')
+			autocomp_file.write(entry)
+			autocomp_file.write(b'" />\n')
+
+		autocomp_file.write(b'\t</AutoComplete>\n')
+		autocomp_file.write(b'</NotepadPlus>')
+
+
+	lang_data_file = create_write_target(WEB_DL_DATA / 'npp' / 'vmt_syntax.xml')
+	syntax_template = (THISDIR / 'chunks' / 'highlight.xml').read_bytes()
+
+	# Percent
+	syntax_template = syntax_template.replace(
+		b'$$percent_params',
+		b'&#x000D;&#x000A;'.join(sorted(
+			list(set(
+				list(percent_params) +
+				extra_perc
+			))
+		))
+	)
+	# Shaders
+	syntax_template = syntax_template.replace(
+		b'$$shaders',
+		b'&#x000D;&#x000A;'.join(sorted(
+			list(set(
+				extra_shaders
+			))
+		))
+	)
+	# Dollar params
+	syntax_template = syntax_template.replace(
+		b'$$dollar_params',
+		b'&#x000D;&#x000A;'.join(sorted(
+			list(set(
+				list(dollar_params) +
+				extra_dollar
+			))
+		))
+	)
+	# Proxy names
+	syntax_template = syntax_template.replace(
+		b'$$proxy_names',
+		b'&#x000D;&#x000A;'.join(sorted(
+			list(set(
+				proxy_names
+			))
+		))
+	)
+	# Surface props
+	syntax_template = syntax_template.replace(
+		b'$$surface_props',
+		b'&#x000D;&#x000A;'.join(sorted(
+			list(set(
+				extra_surfaceprops
+			))
+		))
+	)
+	# Proxy keywords
+	syntax_template = syntax_template.replace(
+		b'$$proxy_keywords',
+		b'&#x000D;&#x000A;'.join(sorted(
+			list(set(
+				proxy_kw
+			))
+		))
+	)
+
+	lang_data_file.write_bytes(syntax_template)
+
+
+
+def _main():
+	search_results = THISDIR / 'output' / 'search'
+	search_results.mkdir(parents=True, exist_ok=True)
+
+	groups = VMTGroups(VMT_DIR)
+
+	for grpname, grpdata in groups:
+		print(grpname)
+		for f_idx, fdata in enumerate(grpdata.files):
+			fname, fbytes = fdata
+			if b'proxies' in fbytes.lower():
+				(search_results / f'{grpname}.{fname}.{f_idx}.vmt').write_bytes(fbytes)
 
 
 if __name__ == '__main__':
