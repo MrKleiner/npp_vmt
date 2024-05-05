@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VMT for Notepad++</title>
+
+	<link rel="shortcut icon" href="icon.gif" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+	<body>
+		<!-- Short header text -->
+		<h1 id="main_header_text">VMT syntax for Notepad++</h1>
+		<section>
+			<div class="section_text">
+				<p>
+					Simple syntax highlighting and even auto-complete.
+					This is mainly done to prevent situations where
+					you check every fucking letter in such parameters,
+					like "normalmapalphaenvmapmask" and "animatedtextureframenumvar".
+				</p>
+			</div>
+			<div class="section_visuals">
+				<img src="./pics/example.png">
+			</div>
+		</section>
+
+		<!-- Docs -->
+		<section>
+			<div class="section_text" id="docs_text">
+				<h2>Documentation</h2>
+				<p>
+					It's required to turn on the built-in
+					quotation marks autocompletion feature for the syntax
+					highlighting to work properly.
+				</p>
+				<p></p>
+
+				<p>
+					Hot feature: Swiftly comment/uncomment lines
+					with "CTRL + Q" shortcut. 
+				</p>
+				<p></p>
+
+				<h3>Colour Map:</h3>
+				<ul id="color_map">
+					<li>
+						<span class="color_map_entry base_param">Light blue</span> =
+						recognized $ parameter.
+					</li>
+					<li>
+						<span class="color_map_entry proxy_word">Pink</span> =
+						recognized % parameter or Proxy.
+					</li>
+					<li>
+						<span class="color_map_entry shader">Green with black bg</span> =
+						recognized shader.
+					</li>
+					<li>
+						<span class="color_map_entry quoted_text">Light yellow</span> =
+						"word in quotation marks".
+					</li>
+					<li>
+						<span class="color_map_entry floating_text">Dark gray italic</span> = 
+						NOT recognized word and which is not in quotation marks.
+					</li>
+				</ul>
+
+				<p>
+					_dx8, _dx6, _dx7, _dx81 and x360 stuff is not included on purpose.
+					Those are super legacy fallbacks,
+					<span style="font-style: italic; color: #E14F48;">nobody</span>
+					needs them and
+					<span style="font-style: italic; color: #E14F48;">nobody wants to fuck with them</span>
+					really.
+				</p>
+
+			</div>
+			<div class="section_visuals"></div>
+		</section>
+
+		<!-- Install -->
+		<section>
+			<div class="section_text" id="install_text">
+				<h2>Install</h2>
+				<p>Download the following 2 files (Make sure not to change names!):</p>
+				<div id="download_box">
+					<div class="dl_item">
+						<span>
+							<a download class="dl_link" href="#">vmt_syntax.xml</a>
+							- The syntax data.
+						</span>
+					</div>
+					<div class="dl_item">
+						<span>
+							<a download class="dl_link" href="#">vmt_mrk.xml</a>
+							- Autocomplete dictionary.
+						</span>
+
+					</div>
+				</div>
+
+				<ul id="install_steps">
+					<li>Go to Notepad++</li>
+					<li>Click "Define your language" in the toolbar</li>
+					<li>Click "Import"</li>
+					<li>
+						Locate the <span class="mono_insert">vmt_syntax.xml</span>
+						downloaded earlier and choose it
+					</li>
+					<li>
+						Go to the folder Notepad++ is installed at
+						(usually <span class="mono_insert nowrap select_all">C:\Program Files\Notepad++</span>)
+					</li>
+					<li>
+						Locate <span class="mono_insert select_all">autoCompletion</span>
+						folder. Create if necessary
+					</li>
+					<li>
+						Place the <span class="mono_insert">vmt_mrk.xml</span>
+						file downloaded earlier into that folder.
+					</li>
+					<li>
+						Restart Notepad++ and re-open any .vmt files you may
+						have had opened
+					</li>
+				</ul>
+			</div>
+
+			<div class="section_visuals">
+				<img src="./pics/def_lang.png">
+				<img src="./pics/import.png">
+			</div>
+
+		</section>
+
+
+	</body>
+
+	<script src="./script.js"></script>
+</html>

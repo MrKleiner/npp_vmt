@@ -1,2 +1,6 @@
 ﻿/old
 /generator/vmt_files/
+/generator/output
+/generator/sample_lang
+generator/test_unpack.py
+generator/test_unpack.cmd
