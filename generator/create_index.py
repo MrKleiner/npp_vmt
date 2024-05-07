@@ -1,8 +1,25 @@
+"""
+Per every child folder of a sibling folder (called "vmt_files" by default)
+of the folder this file is located at - a "composite" file is created,
+containing all of its VMT files inside,
+so that potentially thousands of separate VMT files
+don't have to be read from the disk each time
+the language is generated.
+
+The resulting "composite" files (containing all the VMTs)
+are are a couple megabytes in size, so doing this
+is 100% beneficial and it would be stupid not to do this.
+
+This file has to be run before executing "create_lang.py"
+"""
+
 from pathlib import Path
 import io
 
+# The directory this file is located at
 THISDIR = Path(__file__).parent
 
+# The directory to get the VMT file groups from.
 VMT_DIR = THISDIR / 'vmt_files'
 
 
@@ -12,12 +29,20 @@ def main():
 		if not game.is_dir():
 			continue
 
+		# This function is like 40 lines of code.
+		# Just look at what it does to understand
+		# how the composite files are created.
 		index_buf = io.BytesIO()
 		data_buf = io.BytesIO()
 
 		file_count = 0
 
-		for file in game.glob('*.vmt'):
+		# Recursively scan for vmt files
+		for file in game.rglob('*.vmt'):
+			# Avoid very funny jokes
+			if not file.is_file():
+				continue
+
 			print(
 				game.name.ljust(10, ' '),
 				file.name

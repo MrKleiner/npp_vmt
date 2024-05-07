@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-	<body>
+	<body onload="body_onload()">
 		<!-- Short header text -->
 		<h1 id="main_header_text">VMT syntax for Notepad++</h1>
 		<section>
@@ -99,7 +99,7 @@
 					</div>
 					<div class="dl_item">
 						<span>
-							<a download class="dl_link" href="dl_data/npp/vmt_mrk.xml" href="#" title="Last update: 05-05-2024">vmt_mrk.xml</a>
+							<a download class="dl_link" href="dl_data/npp/vmt_mrk.xml" title="Last update: 05-05-2024">vmt_mrk.xml</a>
 							- Autocomplete dictionary.
 						</span>
 
@@ -112,7 +112,7 @@
 					<li>Click "Import"</li>
 					<li>
 						Locate the <span class="mono_insert">vmt_syntax.xml</span>
-						downloaded earlier and choose it
+						file downloaded earlier and choose it
 					</li>
 					<li>
 						Go to the folder Notepad++ is installed at
@@ -131,6 +131,10 @@
 						have had opened
 					</li>
 				</ul>
+
+				<p>
+					Hover the download links to see the last update date.
+				</p>
 			</div>
 
 			<div class="section_visuals">
@@ -138,6 +142,72 @@
 				<img src="./pics/import.png">
 			</div>
 
+		</section>
+
+		<!-- Docs -->
+		<section id="technical_info">
+			<div class="section_text" id="docs_text">
+				<h2>Technical</h2>
+				<p>
+					This addon contains parameters from the following games:
+				</p>
+				<ul>
+					<li>Half-Life 2 and episodes</li>
+					<li>Black Mesa</li>
+					<li>Alien Swarm: Reactive Drop</li>
+					<li>Team Fortress 2</li>
+					<li>Left 4 Dead 2</li>
+					<li>Portal</li>
+					<li>Portal 2</li>
+					<li>Counter-Strike: Global Offensive</li>
+				</ul>
+
+				<p>
+					The VMT files from the games listed above were scanned
+					for $ and % parameters, excluding VMTs which have proxies
+					in them.
+				</p>
+				<p>
+					Then, the following stuff was added from
+					manually created lists:
+				</p>
+				<ul>
+					<li>Proxy names</li>
+					<li>Proxy key names</li>
+					<li>Shaders</li>
+					<li>Surface properties</li>
+					<li>
+						Some genuine $ parameters, that are only present
+						in VMTs with proxies in them, such as
+						"CloakPassEnabled"
+					</li>
+				</ul>
+				<p>
+					Finally, the resulting lists were quickly skipped through
+					manually to create a blacklist of words, like
+					"NormalMapAlphaEnvMapMas", "keyworkds" and so on.
+				</p>
+
+				<p>
+					Everything that was used to create this addon
+					<a
+						href="https://github.com/MrKleiner/npp_vmt/tree/master/generator"
+						>can be found here</a>,
+					including all the lists, script and so on.
+					It's totally possible to use the script mentioned above
+					to create a customized version of this addon.
+					(The link above points to the same repository this website is served from).
+				</p>
+			</div>
+			<div class="section_visuals"></div>
+		</section>
+
+		<section id="funny">
+			<div class="section_text">
+				<img src="icon.gif">
+			</div>
+			<div class="section_visuals">
+			</div>
 		</section>
 
 

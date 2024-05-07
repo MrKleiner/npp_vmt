@@ -1,5 +1,5 @@
 from pathlib import Path
-import io, shutil
+import io, shutil, json, datetime
 
 THISDIR = Path(__file__).parent
 
@@ -36,9 +36,11 @@ def extract_prefixed_params(tgt_bytes, prefix=b'$'):
 		result = None
 		for e in l:
 			if prefix in e:
+				# todo: remove .lower(), because shit's already lowered?
 				result = e.strip(prefix).strip().lower()
 				break
 
+		# todo: create a tuple with True/False?
 		if not result:
 			continue
 
@@ -151,9 +153,6 @@ class VMTGroups:
 		for comp_file in self.groups_dir.glob('*.comp'):
 			self._groups[comp_file.stem] = VMTComposition(comp_file)
 
-	def __getitem__(self, key):
-		return self.groups.get(key)
-
 	def composite(self, blacklist=None):
 		blacklist = blacklist or ()
 
@@ -173,6 +172,9 @@ class VMTGroups:
 
 		return dollar_list, percent_list
 
+	def __getitem__(self, key):
+		return self.groups.get(key)
+
 	def __iter__(self):
 		for grpname, grpdata in self.groups.items():
 			yield grpname, grpdata
@@ -189,7 +191,7 @@ class WordList:
 			return self._word_list
 
 		wlist = list(map(
-			lambda i: i.strip(),
+			lambda i: i.strip().lower(),
 			self.tgt_file.read_bytes().split(b'\n')
 		))
 		self._word_list = list(filter(
@@ -219,7 +221,8 @@ def create_write_target(tgt_path):
 	return tgt_path
 
 
-def main():
+
+def create_lang():
 	dlr_comp_path = create_write_target(OUT_DOLLAR / 'dollar_composite.dparams')
 	perc_comp_path = create_write_target(OUT_DOLLAR / 'percent_composite.dparams')
 
@@ -248,7 +251,9 @@ def main():
 		extra_perc,
 		extra_autocomp,
 		extra_shaders,
-		extra_surfaceprops
+		extra_surfaceprops,
+		proxy_kw,
+		proxy_names
 	)
 
 	autocomp_data = list(autocomp_data)
@@ -336,9 +341,17 @@ def main():
 
 	lang_data_file.write_bytes(syntax_template)
 
+	today = datetime.date.today()
+	# Some stuff for the website
+	(THISDIR.parent / 'docs' / 'info.json').write_text(
+		json.dumps({
+			'last_update': f'{str(today.day).zfill(2)}-{str(today.month).zfill(2)}-{today.year}'
+		})
+	)
 
 
-def _main():
+# This was used to find all the VMT files with proxies in them
+def find_proxy_vmts():
 	search_results = THISDIR / 'output' / 'search'
 	search_results.mkdir(parents=True, exist_ok=True)
 
@@ -350,6 +363,53 @@ def _main():
 			fname, fbytes = fdata
 			if b'proxies' in fbytes.lower():
 				(search_results / f'{grpname}.{fname}.{f_idx}.vmt').write_bytes(fbytes)
+
+
+def find_with_least_hits():
+	search_results = THISDIR / 'output' / 'search'
+	search_results.mkdir(parents=True, exist_ok=True)
+
+	blacklist = WordList(THISDIR / 'blacklist.bl')
+
+	groups = VMTGroups(VMT_DIR)
+
+	hits = {}
+
+	for grpname, grpdata in groups:
+		print('Indexing', grpname)
+		for param in grpdata.dollar_params:
+			if not param in blacklist:
+				hits[param] = 0
+
+	for grpname, grpdata in groups:
+		print('Searching', grpname)
+		for f_idx, fdata in enumerate(grpdata.files):
+			fname, fbytes = fdata
+			fbytes = fbytes.lower()
+			if b'proxies' in fbytes:
+				continue
+			for param in hits:
+				if (b'$' + param) in fbytes:
+					hits[param] += 1
+
+	hits = list(hits.items())
+	hits.sort(
+		key=lambda i: i[1]
+	)
+
+	results = create_write_target(THISDIR / 'output' / 'least_repeated.txt')
+	with open(results, 'ab') as results_file:
+		for param, hit_count in hits:
+			results_file.write(param.ljust(50))
+			results_file.write(str(hit_count).encode())
+			results_file.write(b'\n')
+
+
+
+
+
+def main():
+	create_lang()
 
 
 if __name__ == '__main__':

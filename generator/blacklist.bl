@@ -3,6 +3,19 @@ basealmapalphaenvmapmask
 peel
 normalmapenvmapmask
 basetexture
+yellow
+keyworkds
+normalmapalphaenvmapmas
+sellillum
+baseapalphaenvmapmask
+BaseMapAlphPhongMask
+basettexture
+bumpamp
+transluescent
+one
+
+
+
 
 
 

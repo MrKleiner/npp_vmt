@@ -195,3 +195,17 @@ section .section_visuals > *:not(:first-child){
 	background: rgba(255, 255, 255, 0.1);
 }
 
+#funny{
+	margin-top: 500px;
+}
+
+#technical_info{
+	margin-top: 170px;
+}
+
+#technical_info a{
+	color: #AAFFFF;
+}
+#technical_info a:active{
+	color: #F11B39;
+}

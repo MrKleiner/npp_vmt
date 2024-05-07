@@ -1,2 +1,20 @@
+# <-- Comment lines with this character
+
 cloakpassenabled
 detailblendfactor
+sheenPassEnabled
+sheenmap
+sheenmapmask
+sheenmaptint
+sheenmapmaskframe
+sheenindex
+_rt_camera
+_rt_waterreflection
+
+
+# Questionable Black Mesa-only stuff
+_rt_FullFrameFB
+_rt_DofBlurDownsampled
+
+
+
