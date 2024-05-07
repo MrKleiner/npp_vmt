@@ -2,7 +2,7 @@
 
 const body_onload = async function(){
 	const response = await fetch(
-		'/info.json',
+		'./info.json',
 		{
 			'headers': {
 				'accept': '*/*',
