@@ -13,9 +13,9 @@ basettexture
 bumpamp
 transluescent
 one
+envmapconstrast
+envmapfrensel
 
-
-
-
+# todo: envcontrast
 
 
